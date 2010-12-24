@@ -1,0 +1,4 @@
+select to_char(sysdate,'YYYYMMDDHH24MMSS'),'|ORA_GLOBAL', '|UDM_ORA_SID','|OracleInstance',(select INSTANCE_NAME from V$INSTANCE  )  as instance,'|',(SELECT instance_name FROM V$INSTANCE),'|&1' from dual;
+select to_char(sysdate,'YYYYMMDDHH24MMSS'),'|ORA_GLOBAL', '|UDM_ORA_VERSION','|OracleInstance',(select INSTANCE_NAME from V$INSTANCE  )  as instance,'|',(SELECT VERSION FROM V$INSTANCE),'|&1' from dual;
+select to_char(sysdate,'YYYYMMDDHH24MMSS'),'|ORA_GLOBAL', '|UDM_ORA_BIT','|OracleInstance',(select INSTANCE_NAME from V$INSTANCE  ) as instance,'|',(select substr(BANNER,-4,4) from V$VERSION where rownum  =1) as bit,'|&1' from  dual;
+select to_char(sysdate,'YYYYMMDDHH24MMSS'),'|ORA_GLOBAL', '|UDM_ORA_ARCHIVED_MODE','|OracleInstance',(select INSTANCE_NAME from V$INSTANCE  )  as instance,'|',(SELECT LOG_MODE FROM V$DATABASE  where  rownum =1),'|&1' from dual;

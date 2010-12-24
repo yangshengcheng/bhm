@@ -1,0 +1,2 @@
+select replace(replace(replace(CONVERT(VARCHAR(23),getdate(),120),'-',''),':',''),' ','') as timestamp , 'MSSQL_GLOBAL' as class,'MSSQL_SID' as metric,'NULL' as instance,@@servicename as value,'MSWin32' as ostype
+select replace(replace(replace(CONVERT(VARCHAR(23),getdate(),120),'-',''),':',''),' ','') as timestamp , 'MSSQL_GLOBAL' as class,'MSSQL_VERSION' as metric,'NULL' as instance,substring(@@version,0,charindex(')',@@version)+1) as value,'MSWin32' as ostype

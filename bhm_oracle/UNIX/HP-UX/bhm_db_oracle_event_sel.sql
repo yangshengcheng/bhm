@@ -1,0 +1,1 @@
+SELECT to_char(sysdate,'YYYYMMDDHH24MMSS'),'|ORA_EVENT', '|UDM_ORA_EVENT_WAITS','|OracleInstance',(select INSTANCE_NAME from V$INSTANCE  ) as instance,'/"',substr(EVENT,0,25) ,'"|',TOTAL_WAITS,'|&1' FROM V$SYSTEM_EVENT where rownum <6 order by 2 desc;
