@@ -789,7 +789,18 @@ sub  caculate
 			&log_ftp_err("GBL_CPU_IDLE_UTIL performent counter is not exists");
 			return 0;
 		}
-		$hash_ref->{'GBL_CPU_TOTAL_UTIL'}->{'value'} = 100 - $hash_ref->{'GBL_CPU_IDLE_UTIL'}->{'value'};
+		
+		# follow judge fix  windows cpu idle value greater than 100 exception
+
+		if($hash_ref->{'GBL_CPU_IDLE_UTIL'}->{'value'} >= 100)
+		{
+			$hash_ref->{'GBL_CPU_TOTAL_UTIL'}->{'value'} = 0;
+		}
+		else
+		{
+			$hash_ref->{'GBL_CPU_TOTAL_UTIL'}->{'value'} = 100 - $hash_ref->{'GBL_CPU_IDLE_UTIL'}->{'value'};
+		}
+
 		$hash_ref->{'GBL_CPU_TOTAL_UTIL'}->{'timestamp'}= $hash_ref->{'GBL_CPU_IDLE_UTIL'}->{'timestamp'};
 		$hash_ref->{'GBL_CPU_TOTAL_UTIL'}->{'class'}='GLOBAL';
 		$hash_ref->{'GBL_CPU_TOTAL_UTIL'}->{'instance_name'}='NULL';
