@@ -1,4 +1,4 @@
-#for weblogic 9.2
+#for weblogic 8.1
 
 JDBCDataSourceRuntimeMBean	 CurrCapacityHighCount	WLSSPI_0700
 WebAppComponentRuntimeMBean	 OpenSessionsHighCount	WLSSPI_0701
@@ -51,10 +51,14 @@ JDBCDataSourceRuntimeMBean WaitingForConnectionCurrentCount	WLSSPI_0722
 JVMRuntimeMBean	Uptime	WLSSPI_0750
 JVMRuntimeMBean	HeapFreePercent	WLSSPI_0751
 JVMRuntimeMBean JavaVersion WLSSPI_0752
+JVMRuntimeMBean	HeapFreeCurrent	WLSSPI_0753
+JVMRuntimeMBean	HeapSizeCurrent	WLSSPI_0754
 
 JRockitRuntimeMBean	Uptime	WLSSPI_0750
 JRockitRuntimeMBean	HeapFreePercent	WLSSPI_0751
 JRockitRuntimeMBean	JavaVersion	WLSSPI_0752
+JRockitRuntimeMBean	HeapFreeCurrent	WLSSPI_0753
+JRockitRuntimeMBean	HeapSizeCurrent	WLSSPI_0754
 
 #audit
 #ServerSecurityRuntimeMBean UserLockoutTotalCount	WLSSPI_0760

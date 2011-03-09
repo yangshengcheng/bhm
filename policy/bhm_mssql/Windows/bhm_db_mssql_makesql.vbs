@@ -1,5 +1,5 @@
 rem On Error Resume Next
-'Option Explicit
+rem Option Explicit
 
 ' --------------------------------------------------------------------------
 ' This script read sql strings from a file, and query the result from  mssql  ,then  write the result to a file
@@ -8,7 +8,7 @@ rem On Error Resume Next
 ' use cscript to get output on the command prompt: 
 ' example: 
 ' 
-'   cscript bhm_db_mssql_query.vbs bhm_mssql_config.sql
+'   cscript bhm_db_mssql_makesql.vbs bhm_mssql_makesql_datafiles.sql  bhm_mssql_perf_datafiles.sql
 '
 ' author:yangshengcheng@gzcss.net
 ' timestamp : 2010/12/20
@@ -16,39 +16,46 @@ rem On Error Resume Next
 
 rem usage 
 Sub Usage ()
-  Wscript.Echo "Usage: cscript bhm_db_mssql_query.vbs <sql_file>" 
+  Wscript.Echo "Usage: cscript bhm_db_mssql_makesql.vbs <sql_file> " & " <dest_sql_file>"
   WScript.Quit(1)  
 End Sub
 
 rem analyse the argument
 Dim  filename
+Dim  sqlfile
+Dim oArgs
 set oArgs=wscript.arguments
   
-If oArgs.Count <> 1 Then 
+If oArgs.Count <> 2 Then 
   Usage () 
 else
   filename = oArgs.item(0)
+  sqlfile = oArgs.item(1)
 rem   wscript.echo filename
 End If
 
 rem  read sql strings from file
-Dim arrFileLines()
-i = 0
+rem  Dim arrFileLines()
+rem  i = 0
+Dim objFSO
+Dim  objFile
 Set objFSO = CreateObject("Scripting.FileSystemObject")
 Set objFile = objFSO.OpenTextFile(filename, 1)
+
+strcontent = objFile.ReadAll
 rem open file  error
 
-Do Until objFile.AtEndOfStream
-Redim Preserve arrFileLines(i)
-arrFileLines(i) = objFile.ReadLine
-i = i + 1
-Loop
+'Do Until objFile.AtEndOfStream
+'Redim Preserve arrFileLines(i)
+'arrFileLines(i) = objFile.ReadLine
+'i = i + 1
+'Loop
 objFile.Close
 
-If Ubound(arrFileLines) < 0 Then 
-	WScript.echo  "empty file"
-	WScript.Quit(1)
-End if
+'If Ubound(arrFileLines) < 0 Then 
+'	WScript.echo  "empty file"
+'	WScript.Quit(1)
+'End if
 'For l =  LBound(arrFileLines)  to Ubound(arrFileLines) Step 1
 '	Wscript.Echo arrFileLines(l)
 'Next
@@ -114,37 +121,39 @@ rem log result to  file
 	OvDataDirStr = oSHell.Environment.Item( "OvDataDir" )
 
 	Call checkFolder(OvDataDirStr)
-	mssql_perf_filepath = OvDataDirStr & "\bhm\temp\mssql_perf.csv"
+	mssql_perf_filepath = OvDataDirStr & "\bin\instrumentation\" & sqlfile
 
 	Set mssql_objFSO = CreateObject("Scripting.FileSystemObject")
 	
-	Set mssql_file_obj = mssql_objFSO.OpenTextFile(mssql_perf_filepath,8,true)
+	Set mssql_file_obj = mssql_objFSO.OpenTextFile(mssql_perf_filepath,2,true)
 
 
 rem loop  all sql  strings in the arrFileLines
-For l =  LBound(arrFileLines)  to Ubound(arrFileLines) Step 1
+rem For l =  LBound(arrFileLines)  to Ubound(arrFileLines) Step 1
 	Dim rez: rez = CreateObject("ADODB.Recordset")
-	Set rez = cnt.execute(arrFileLines(l))
+	Set rez = cnt.execute(strcontent)
 
 	rem  wscript.echo "execute finish !"
 	rem wscript.echo "total line:" & rez.RecordCount 
 
 
 	On Error Resume Next
-	Dim i :i=0
+	Dim  i :i=0
 	rez.MoveFirst
 	Do While Not rez.eof
-		If i >=1  Then 
-			Exit Do
-		End if
-	rem	 WScript.Echo rez("timestamp") & "|" & rez("class") & "|" & rez("metric")& "|" & rez("instance")& "|" &  rez("value")& "|" & rez("ostype")
-		line = rez("timestamp") & "|" & rez("class") & "|" & rez("metric")& "|" & rez("instance")& "|" &  rez("value")& "|" & rez("ostype")
-		mssql_file_obj.WriteLine(line)
-		i = i + 1
-		 rez.MoveNext
+	If i > 100 Then 
+		Exit Do
+	End if
+	WScript.Echo rez("sql")
+	rem WScript.Echo rez("timestamp") & "|" & rez("class") & "|" & rez("metric")& "|" & rez("instance")& "|" &  rez("value")& "|" & rez("ostype")
+	rem line = rez("timestamp") & "|" & rez("class") & "|" & rez("metric")& "|" & rez("instance")& "|" &  rez("value")& "|" & rez("ostype")
+	line = rez("sql")
+	mssql_file_obj.WriteLine(line)
+	i = i + 1
+	  rez.MoveNext
 	Loop
 	rez = Nothing
-Next 
+rem  Next 
 
 rem close the log file
 mssql_file_obj.close

@@ -1,3 +1,6 @@
+On Error  Resume Next 
+
+rem ------------------------------------------
 rem On Error Resume Next
 'Option Explicit
 
@@ -16,43 +19,9 @@ rem On Error Resume Next
 
 rem usage 
 Sub Usage ()
-  Wscript.Echo "Usage: cscript bhm_db_mssql_query.vbs <sql_file>" 
+  Wscript.Echo "Usage: cscript bhm_mssql_findlog.vbs" 
   WScript.Quit(1)  
 End Sub
-
-rem analyse the argument
-Dim  filename
-set oArgs=wscript.arguments
-  
-If oArgs.Count <> 1 Then 
-  Usage () 
-else
-  filename = oArgs.item(0)
-rem   wscript.echo filename
-End If
-
-rem  read sql strings from file
-Dim arrFileLines()
-i = 0
-Set objFSO = CreateObject("Scripting.FileSystemObject")
-Set objFile = objFSO.OpenTextFile(filename, 1)
-rem open file  error
-
-Do Until objFile.AtEndOfStream
-Redim Preserve arrFileLines(i)
-arrFileLines(i) = objFile.ReadLine
-i = i + 1
-Loop
-objFile.Close
-
-If Ubound(arrFileLines) < 0 Then 
-	WScript.echo  "empty file"
-	WScript.Quit(1)
-End if
-'For l =  LBound(arrFileLines)  to Ubound(arrFileLines) Step 1
-'	Wscript.Echo arrFileLines(l)
-'Next
-
 
 rem check installed odbc drivers,if SQL Native Client had  been installed ,then use provider=SQLNCLI,else  provider=SQLOLEDB
 Dim flag :flag = 0
@@ -105,26 +74,10 @@ rem 	wscript.echo adoErr.SQLState&"	"&adoErr.description
 End If
 
 rem 	wscript.echo "connect good !"
-
-rem log result to  file 
-	Dim mssql_perf_filepath
-	Dim line
-	Dim timestamp:timestamp=Year(Now())&Month(Now())&Day(Now())&Hour(Now())&Minute(Now())&Second(Now())
-	Set oShell = WScript.CreateObject( "WScript.Shell" )
-	OvDataDirStr = oSHell.Environment.Item( "OvDataDir" )
-
-	Call checkFolder(OvDataDirStr)
-	mssql_perf_filepath = OvDataDirStr & "\bhm\temp\mssql_perf.csv"
-
-	Set mssql_objFSO = CreateObject("Scripting.FileSystemObject")
-	
-	Set mssql_file_obj = mssql_objFSO.OpenTextFile(mssql_perf_filepath,8,true)
-
-
 rem loop  all sql  strings in the arrFileLines
-For l =  LBound(arrFileLines)  to Ubound(arrFileLines) Step 1
+	arrFileLines = "select @@servicename as  instance"
 	Dim rez: rez = CreateObject("ADODB.Recordset")
-	Set rez = cnt.execute(arrFileLines(l))
+	Set rez = cnt.execute(arrFileLines)
 
 	rem  wscript.echo "execute finish !"
 	rem wscript.echo "total line:" & rez.RecordCount 
@@ -132,28 +85,31 @@ For l =  LBound(arrFileLines)  to Ubound(arrFileLines) Step 1
 
 	On Error Resume Next
 	Dim i :i=0
+	Dim oo
 	rez.MoveFirst
 	Do While Not rez.eof
 		If i >=1  Then 
 			Exit Do
 		End if
 	rem	 WScript.Echo rez("timestamp") & "|" & rez("class") & "|" & rez("metric")& "|" & rez("instance")& "|" &  rez("value")& "|" & rez("ostype")
-		line = rez("timestamp") & "|" & rez("class") & "|" & rez("metric")& "|" & rez("instance")& "|" &  rez("value")& "|" & rez("ostype")
-		mssql_file_obj.WriteLine(line)
+		oo = rez("instance")
 		i = i + 1
 		 rez.MoveNext
 	Loop
 	rez = Nothing
-Next 
-
-rem close the log file
-mssql_file_obj.close
-
 
 If cnt.State = adStateOpen then
 	cnt.Close
 End If
 
+Dim OperationRegistry 
+Set OperationRegistry=WScript.CreateObject("WScript.Shell") 
+Dim data1
+Dim regstr: regstr = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\" & oo & "\Setup\SQLPath"
+data1=OperationRegistry.RegRead(regstr) 
+
+
+wscript.echo Chr(34) & data1 & "\log\ERRORLOG" & Chr(34)
 
 rem  ovo  message object
 Function sendmsg(sev,msg,obj)
@@ -178,15 +134,3 @@ Function sendmsg(sev,msg,obj)
 	msgObj.Send()
 End Function
 
-
-rem check if the dir exists
-Function checkFolder(parentFolder)
-	Dim objFSO,BhmDir,f
-	BhmDir = parentFolder & "\bhm\dsi"
-	
-	Set objFSO = CreateObject("Scripting.FileSystemObject")
-	If not objFSO.FolderExists(BhmDir) Then
-		Set f = objFSO.CreateFolder(BhmDir)
-    checkFolder = f.Path
-	End If
-End Function

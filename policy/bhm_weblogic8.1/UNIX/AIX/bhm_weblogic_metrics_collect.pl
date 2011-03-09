@@ -178,6 +178,7 @@ sub  parserWeblogic
 		if(%temp_hash)
 		{
 #			&flush($timestamp,\@temp_array,"WLSSPI_UDM_METRICS");
+			&caculate(\%temp_hash);
 			&flush_hash($timestamp,\%temp_hash,"WLSSPI_UDM_METRICS");
 		}
 		else
@@ -234,6 +235,26 @@ sub flush
 	close($fl);
 	
 	return  ;	
+}
+
+sub caculate
+{
+	my ($hash_ref) = @_;
+	
+	foreach my $server (keys %{$hash_ref})
+	{
+		foreach my $couter (keys %{$hash_ref->{$server}})
+		{
+
+		}
+		if(exists($hash_ref->{$server}->{'HeapFreeCurrent'}-> {'value'}) && exists($hash_ref->{$server}->{'HeapSizeCurrent'}-> {'value'}))
+		{
+			my $temp =100 - sprintf("%0.2f", $hash_ref->{$server}->{'HeapFreeCurrent'}-> {'value'} * 100 / $hash_ref->{$server}->{'HeapSizeCurrent'}-> {'value'});
+			$hash_ref->{$server}->{'HeapFreePercent'}-> {'value'} = $temp;
+			$hash_ref->{$server}->{'HeapFreePercent'}-> {'metric'} = 'WLSSPI_0751';
+		}
+	} 
+	return 1;
 }
 
 #sent message to  ovo console

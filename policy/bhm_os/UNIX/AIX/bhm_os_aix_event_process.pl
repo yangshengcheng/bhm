@@ -204,7 +204,7 @@ sub check_process
 	if($n < $v)
 	{
 		$text = "$k process  less then expect $v,current $n";
-		&print_msg("warning",$text,$k);
+		&print_msg("critical",$text,$k);
 	}
 
 

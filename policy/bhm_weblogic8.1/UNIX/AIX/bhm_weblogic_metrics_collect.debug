@@ -164,6 +164,7 @@ sub  parserWeblogic
 							#print $_;
 							$instance = $1;$flag = $3; 
 							$value = $5;
+							print "instance:".$instance." flag:".$flag." value:".$value."\n";
 							$temp_hash{$instance}->{$flag}->{'value'} += $value;
 							$temp_hash{$instance}->{$flag}->{'metric'} = $metric;
 						}

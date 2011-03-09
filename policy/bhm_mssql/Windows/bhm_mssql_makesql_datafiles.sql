@@ -1,0 +1,3 @@
+select 
+'select replace(replace(replace(CONVERT(VARCHAR(23),getdate(),120),''-'',''''),'':'',''''),'' '','''') as timestamp,''MSSQL_DATAFILE'' as class,''MSSQL_DATAFILE_SIZE'' as  metric, ''MssqlInstance ''+ @@servicename +''/''+'+ 'reverse(substring(reverse(filename), 1,charindex(''\'', reverse(filename))-1)) as instance,cast(convert(float,size) * (8192.0/1024.0)/1024.0 as varchar) as value,''MSWin32'' as ostype from '+[name] +'.dbo.sysfiles ' as sql
+from master.dbo.sysdatabases where [name] not in ('master','tempdb','msdb','model') 

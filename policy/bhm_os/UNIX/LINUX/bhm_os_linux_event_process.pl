@@ -5,7 +5,7 @@
 #platform : just for linux
 #input : process key word
 #output : error or warn to ovo if process word in a bad condition
-#description :check aix process's status
+#description :check linux process's status
 #severity=normal|warning|minor|major|critical
 
 
@@ -37,8 +37,8 @@ sub print_msg
 {
 	my ($severity,$msg_text,$obj)=@_;
 #	print "$severity"."\t".$msg_text."\n";
-	my $app='bhm_os_aix_event_process.pl';
-	my $msg_grp="BHM:AIX:EVENT";
+	my $app='bhm_os_linux_event_process.pl';
+	my $msg_grp="BHM:LINUX:EVENT";
 	my $node=$node_fqdn;
 	$msg_text = "'".$msg_text."'";
 

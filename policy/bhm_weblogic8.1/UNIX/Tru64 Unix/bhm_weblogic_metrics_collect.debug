@@ -158,12 +158,13 @@ sub  parserWeblogic
 					my @rez=`wasspi_wls_perl  -S wasspi_wls_ca -a  -mbean "*:*,Type=${mbean}" -get  ${attribute}`;
 					foreach (@rez)
 					{
-						
+						print $_;
 						if($_=~/(\S+)\s*\|(.+?)\|(.+?)\|(.+?)\|\s*(\S+)/)
 						{
 							#print $_;
 							$instance = $1;$flag = $3; 
 							$value = $5;
+							print "instance:".$instance." flag:".$flag." value:".$value."\n";
 							$temp_hash{$instance}->{$flag}->{'value'} += $value;
 							$temp_hash{$instance}->{$flag}->{'metric'} = $metric;
 						}

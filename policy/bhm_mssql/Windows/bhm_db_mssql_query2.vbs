@@ -32,23 +32,25 @@ rem   wscript.echo filename
 End If
 
 rem  read sql strings from file
-Dim arrFileLines()
-i = 0
+rem  Dim arrFileLines()
+rem  i = 0
 Set objFSO = CreateObject("Scripting.FileSystemObject")
 Set objFile = objFSO.OpenTextFile(filename, 1)
+
+strcontent = objFile.ReadAll
 rem open file  error
 
-Do Until objFile.AtEndOfStream
-Redim Preserve arrFileLines(i)
-arrFileLines(i) = objFile.ReadLine
-i = i + 1
-Loop
+'Do Until objFile.AtEndOfStream
+'Redim Preserve arrFileLines(i)
+'arrFileLines(i) = objFile.ReadLine
+'i = i + 1
+'Loop
 objFile.Close
 
-If Ubound(arrFileLines) < 0 Then 
-	WScript.echo  "empty file"
-	WScript.Quit(1)
-End if
+'If Ubound(arrFileLines) < 0 Then 
+'	WScript.echo  "empty file"
+'	WScript.Quit(1)
+'End if
 'For l =  LBound(arrFileLines)  to Ubound(arrFileLines) Step 1
 '	Wscript.Echo arrFileLines(l)
 'Next
@@ -122,29 +124,29 @@ rem log result to  file
 
 
 rem loop  all sql  strings in the arrFileLines
-For l =  LBound(arrFileLines)  to Ubound(arrFileLines) Step 1
+rem For l =  LBound(arrFileLines)  to Ubound(arrFileLines) Step 1
 	Dim rez: rez = CreateObject("ADODB.Recordset")
-	Set rez = cnt.execute(arrFileLines(l))
+	Set rez = cnt.execute(strcontent)
 
 	rem  wscript.echo "execute finish !"
 	rem wscript.echo "total line:" & rez.RecordCount 
 
 
 	On Error Resume Next
-	Dim i :i=0
+	Dim  i :i=0
 	rez.MoveFirst
 	Do While Not rez.eof
-		If i >=1  Then 
-			Exit Do
-		End if
-	rem	 WScript.Echo rez("timestamp") & "|" & rez("class") & "|" & rez("metric")& "|" & rez("instance")& "|" &  rez("value")& "|" & rez("ostype")
-		line = rez("timestamp") & "|" & rez("class") & "|" & rez("metric")& "|" & rez("instance")& "|" &  rez("value")& "|" & rez("ostype")
-		mssql_file_obj.WriteLine(line)
-		i = i + 1
-		 rez.MoveNext
+	If i >= 1 Then 
+		Exit Do
+	End if
+rem	 WScript.Echo rez("timestamp") & "|" & rez("class") & "|" & rez("metric")& "|" & rez("instance")& "|" &  rez("value")& "|" & rez("ostype")
+	line = rez("timestamp") & "|" & rez("class") & "|" & rez("metric")& "|" & rez("instance")& "|" &  rez("value")& "|" & rez("ostype")
+	mssql_file_obj.WriteLine(line)
+	i = i + 1
+	  rez.MoveNext
 	Loop
 	rez = Nothing
-Next 
+rem  Next 
 
 rem close the log file
 mssql_file_obj.close
