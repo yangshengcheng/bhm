@@ -10,13 +10,13 @@ On Error resume Next
 ' 
 '   cscript OvOWSubmit2qiming.vbs 6623fda0-0ef8-71d4-1d6e-0f887b3e0000 
 '
-' author:yangshengcheng
+' author:yangshengcheng@gzcss.net
 ' change:
 ' qiming syslog format chang.
 ' --------------------------------------------------------------------------
 
 Sub Usage ()
-  Wscript.Echo "Usage: SubmitTT <Id>" & CRLF & CRLF &_
+  Wscript.Echo "Usage: OvOWSubmit2qiming.vbs <Id>" & CRLF & CRLF &_
                "       <Id>          = Id of the OV_Message instance " & CRLF                      
   WScript.Quit(1)  
 End Sub
@@ -177,42 +177,12 @@ Else
 
 End if
 
-
-
-Dim temp 
-Dim y
-temp = Year(Now())
-If Len(temp)=4 Then
-	y = Right(temp,2)
-Else
-	y = temp
-End if
-	
-Dim m
-temp = Month(Now())
-If Len(temp)=1 Then 
-	m = "0" & temp 
-Else
-	m = temp
-End If 
-
-Dim d
-temp = Day(Now())
-If Len(temp)=1 Then 
-	d = "0" & temp 
-Else
-	d= temp
-End If
-
-Dim timestamp:timestamp=y&m&d
-
-
 	rem log the qiming syslog message
 	Dim oFSO, oTS,qimingLog
 
 	Set oFSO = WScript.CreateObject("Scripting.FileSystemObject")
 
-	qimingLog = "D:\Program Files\HP\HP BTO Software\bin\bhm\qiming_"&timestamp&".log"
+	qimingLog = "D:\Program Files\HP\HP BTO Software\bin\bhm\qiming.log"
 
 	If oFSO.FileExists(qimingLog) Then 
 		Set oTS = oFSO.OpenTextFile(qimingLog,8)

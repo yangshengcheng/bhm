@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 #author: yangshengcheng@gzcss.net
-#date: 2010/12/13
+#date: 2011/01/07
 #usage: invoked by ovo scheduled task  policy (bhm_os_perf_data_upload)
 #parameter: no
 #description: upload  all performent data to data server
@@ -205,18 +205,21 @@ sub parserCoda
 		while(my $line=<CODA>)
 		{
 			
-			if($line=~/^(\d+)\/(\d+)\/\d+\s+(\d+):(\d+):(\d+)(.*?)\|(\w+)\s*\|(.+?)\|/)
+			if($line=~/.*?\|(\w+)\s*\|(.+?)\|/)
 			{
-					
-					my $mon = $1;my $day=$2;my $hour=$3;my $min = $4;my $sec=$5;my $AMPM= $6;my $metric=$7;my $value=$8;
+#					print $line;
+					my $mon =strftime("%m",localtime);my $day=strftime("%d",localtime);my $hour=strftime("%H",localtime);my $min = strftime("%M",localtime);my $sec=strftime("%S",localtime);
+#					my $AMPM= $5;
+					my $metric=$1;my $value=$2;
 					next if($metric=~/GBL_CPU/i);
-					if($AMPM && $AMPM =~/PM/i)
-					{
-						$hour = $hour +  12;
-					}
+#					if($AMPM && $AMPM =~/PM/i)
+#					{
+#						$hour = $hour +  12;
+#					}
 					
 					if($metric=~/GBL_/i)
 					{
+#						print $metric."\n";
 						$temp_hash{$metric}->{'timestamp'}=$year.$mon.$day.$hour.$min.$sec;
 						$temp_hash{$metric}->{'class'}='GLOBAL';
 						$temp_hash{$metric}->{'instance_name'}='NULL';
@@ -299,6 +302,13 @@ sub parserCoda
 			close(CODA);
 			
 			###flush the buff to data file
+#			foreach my $a (keys %temp_hash)
+#			{
+#				print $a."->".$temp_hash{$a}->{'timestamp'}."\n";
+#				print $a."->".$temp_hash{$a}->{'class'}."\n";
+#				print $a."->".$temp_hash{$a}->{'instance_name'}."\n";
+#				print $a."->".$temp_hash{$a}->{'value'}."\n";
+#			}
 			&flush(\%temp_hash,\@temp);
 		
 }
@@ -473,14 +483,11 @@ sub parserBHM_OS_PERF
 		while(my $line=<BHM_OS_PERF>)
 		{
 			
-			if($line=~/^(\d+)\/(\d+)\/\d+\s+(\d+):(\d+):(\d+)(.*?)\|(\w+)\s*\|(.+?)\|/)
+			if($line=~/.*?\|(\w+)\s*\|(.+?)\|/)
 			{
-					
-					my $mon = $1;my $day=$2;my $hour=$3;my $min = $4;my $sec=$5;my $AMPM= $6;my $metric=$7;my $value=$8;
-					if($AMPM && $AMPM =~/PM/i)
-					{
-						$hour = $hour +  12;
-					}
+					#print $line;
+					my $metric=$1;my $value=$2;
+					my $mon =strftime("%m",localtime);my $day=strftime("%d",localtime);my $hour=strftime("%H",localtime);my $min = strftime("%M",localtime);my $sec=strftime("%S",localtime);
 					
 					unless( $metric=~/InstanceName/i)
 					{
@@ -747,6 +754,7 @@ sub  flush
 			
 			foreach my $key (keys %{$hasl_ref})
 			{
+				print $hasl_ref->{$key}->{'timestamp'}.'|'.$hasl_ref->{$key}->{'class'}.'|'.$key.'|'.$hasl_ref->{$key}->{'instance_name'}.'|'.$hasl_ref->{$key}->{'value'}.'|'.$osname."\n";
 				print $fl $hasl_ref->{$key}->{'timestamp'}.'|'.$hasl_ref->{$key}->{'class'}.'|'.$key.'|'.$hasl_ref->{$key}->{'instance_name'}.'|'.$hasl_ref->{$key}->{'value'}.'|'.$osname."\n";
 			}
 			
@@ -1168,6 +1176,12 @@ if($osname=~/aix/i)
 
 #	print "weblogic parser\n";
 &merge_func("weblogic_");
+
+# load mssql perf metric
+&merge_func("mssql_");
+
+#load iis perf  metric
+&merge_func("iis_");
 
 #upload the data file
 if(-e "${agent_data_dir}$filename")

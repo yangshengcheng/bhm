@@ -8,15 +8,13 @@ On Error resume Next
 ' use cscript to get output on the command prompt: 
 ' example: 
 ' 
-'   cscript OvOWSubmit2qiming.vbs 6623fda0-0ef8-71d4-1d6e-0f887b3e0000 
+'   cscript OvOWSubmit2anshi.vbs 6623fda0-0ef8-71d4-1d6e-0f887b3e0000 
 '
-' author:yangshengcheng
-' change:
-' qiming syslog format chang.
+' author:yangshengcheng@gzcss.net
 ' --------------------------------------------------------------------------
 
 Sub Usage ()
-  Wscript.Echo "Usage: SubmitTT <Id>" & CRLF & CRLF &_
+  Wscript.Echo "Usage: OvOWSubmit2anshi.vbs <Id>" & CRLF & CRLF &_
                "       <Id>          = Id of the OV_Message instance " & CRLF                      
   WScript.Quit(1)  
 End Sub
@@ -94,7 +92,7 @@ Set OV_Message = GetObject(MsgPath)
 
 Dim messageGroup : messageGroup = OV_Message.MessageGroup
 Dim win:win = "WINOS"
-Dim qiming
+Dim anshi
 
 If InStr(1,messageGroup,win,1) Then 
 	
@@ -105,45 +103,15 @@ If InStr(1,messageGroup,win,1) Then
 	rem wscript.echo originaltext
 
 	rem event log  type(type)
-	Object =OV_Message.Object
+	Object = OV_Message.Object
+	
+	rem ovo Severity
+	Severity = OV_Message.Severity
+	rem Application
+	Application =OV_Message.Application
 
-	rem  event log  user(user)
-	user = OV_Message.userOfstatechange
-
-	rem  event  log  domain(domain)
-	domain = ""
-
-	rem  event log 来源(source)
-	source =OV_Message.Application
-
-	rem event log computername(hostname)
-	temp = RegExpTest("Computer:\s+(\S+)\s+",originaltext)
-	temp = RegExpTest("\S+",temp)
-	temp = Replace(temp,"Computer:","")
-	Trim(Replace(temp," ","") )
-
-	hostname = temp
-
-	rem event log level (level)
-	level = ""
-
-	rem event log 类型(subtype)
-	subtype = OV_Message.Type
-
-	rem  event log  event  ID(eid)
-	temp = RegExpTest("ID:\s+\d+\s+",originaltext)
-	temp = RegExpTest("\d+",temp)
-	temp = Replace(temp," ","")
-	eid = temp
-
-	rem event log class (class) 
-	event_class = ""
-	rem  event log  description (msg) 
-	temp = RegExpTest("Description:.*",originaltext)
-	rem wscript.echo  "temp:" & temp
-	temp = Replace(temp,"Description:","")
-	rem Trim(Replace(temp," ","") )
-	msg = temp
+	rem type
+	mtype = OV_Message.Type
 
 	rem event log  ip(hostIP)
 	NodeId      = OV_Message.NodeName
@@ -152,32 +120,32 @@ If InStr(1,messageGroup,win,1) Then
 	' Caption = OV_ManagedNode.Caption
 	hostIP = OV_ManagedNode.PrimaryNodeName
 
-	'Wscript.Echo "type: " & eventType
-	'Wscript.Echo "date:" & DateCreated
-	'Wscript.Echo "time:" & TimeCreated
-	'Wscript.Echo "Application:" & Application
-	'Wscript.Echo "Object:"& Object
-	'Wscript.Echo "eventID:" & eventID
-	'Wscript.Echo "user:" & user
-	'Wscript.Echo "ComputerName:" & ComputerName
-	'Wscript.Echo "description:" & description
-
-	rem  wscript.echo eventType&","&DateCreated&","&TimeCreated&","&Application&","&Object&","&eventID&","&user& ","&ComputerName & ","&description
-	qiming ="Microsoft: Windows time="&DateCreated&" "&TimeCreated&" "&"hostIp="&hostIP&" "&"type="&Object&" "&"user="&user&" "&"domain="&domain& " "&"source="&source & " "&"hostName="&hostname & " "& "level="&level & " "& "subType=" & subType & " "& "eid="& eid &" "&"class="&event_class&" "&"msg="&msg
+	anshi = DateCreated&" "&TimeCreated&"|"&hostIP&"|"&Object&"|"&Severity&"|"&Application&"|"&mtype&"|"&originaltext
+rem	wscript.echo anshi
 Else
 		rem event log  ip(hostIP)
-	NodeId      = OV_Message.NodeName
+	NodeId = OV_Message.NodeName
 	NodePath = WMINode & """" & NodeId & """"
 	Set OV_ManagedNode = GetObject(NodePath)
 	' Caption = OV_ManagedNode.Caption
 	hostIP = OV_ManagedNode.PrimaryNodeName
-	qimingclass = SubMatchTest(messageGroup,"(\w+):(\w+)")
 
-	qiming = qimingclass&" "&"time="& DateCreated&" "&TimeCreated &" "&"hostIP="&hostIP &" "& OV_Message.Text
+		rem event log  type(type)
+	Object = OV_Message.Object
+	
+	rem ovo Severity
+	Severity = OV_Message.Severity
+	rem Application
+	Application =OV_Message.Application
+
+	rem type
+	mtype = OV_Message.Type
+
+rem	anshiclass = SubMatchTest(messageGroup,"(\w+):(\w+)")
+
+	anshi =DateCreated&" "&TimeCreated &"|"&hostIP &"|"&Object&"|"&Severity&"|"&Application&"|"&mtype&"|"& OV_Message.Text
 
 End if
-
-
 
 Dim temp 
 Dim y
@@ -206,34 +174,33 @@ End If
 
 Dim timestamp:timestamp=y&m&d
 
-
-	rem log the qiming syslog message
-	Dim oFSO, oTS,qimingLog
+	rem log the anshi syslog message
+	Dim oFSO, oTS,anshiLog
 
 	Set oFSO = WScript.CreateObject("Scripting.FileSystemObject")
 
-	qimingLog = "D:\Program Files\HP\HP BTO Software\bin\bhm\qiming_"&timestamp&".log"
+	anshiLog = "D:\Program Files\HP\HP BTO Software\bin\bhm\anshi_"&timestamp&".log"
 
-	If oFSO.FileExists(qimingLog) Then 
-		Set oTS = oFSO.OpenTextFile(qimingLog,8)
-		oTS.WriteLine(qiming)
+	If oFSO.FileExists(anshiLog) Then 
+		Set oTS = oFSO.OpenTextFile(anshiLog,8)
+		oTS.WriteLine(anshi)
 		oTS.close
 	Else
-		Set oTS = oFSO.CreateTextFile(qimingLog,1)
-		oTS.WriteLine(qiming)
+		Set oTS = oFSO.CreateTextFile(anshiLog,1)
+		oTS.WriteLine(anshi)
 		oTS.close
 	End If 
 
 
 
-	rem send windows event to  qiming soc 
+	rem send windows event to  anshi soc 
 	Set Sock=CreateObject("MSWinsock.Winsock")
 	sock.Protocol=1
-	rem  the  soc ip is 10.91.1.233,guo wen long pc 's ip  is 10.91.14.110
+	rem  change the ip follow 
 	sock.Connect "10.91.1.233",514
 	rem  Do While True
 	rem wscript.echo  syslog4bhm
-	sock.senddata qiming
+	sock.senddata anshi
 	If Err <> 0 Then 
 		wscript.echo Err.description
 	End if
@@ -249,5 +216,5 @@ rem ack the message after sent
 ' ackObj.MessageId = MsgId
 ' ackObj.Acknowledge()
 ' --------------------------------------------------------------------------
-' End of Submit2qiming.vbs
+' End of Submit2anshi.vbs
 ' --------------------------------------------------------------------------

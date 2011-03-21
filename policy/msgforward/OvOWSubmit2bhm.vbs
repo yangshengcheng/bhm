@@ -85,12 +85,40 @@ Primary = OV_ManagedNode.PrimaryNodeName
 syslog4bhm = Primary &"##"& State & "##" & DateCreated & " " &TimeCreated & "##"&MessageGroup & "##"&Object & "##"&Application & "##" & Severity & "##"&Source & "##" & Text
 rem  Wscript.Echo syslog4bhm
 
+rem set timestamp
+Dim temp 
+Dim y
+temp = Year(Now())
+If Len(temp)=4 Then
+	y = Right(temp,2)
+Else
+	y = temp
+End if
+	
+Dim m
+temp = Month(Now())
+If Len(temp)=1 Then 
+	m = "0" & temp 
+Else
+	m = temp
+End If 
+
+Dim d
+temp = Day(Now())
+If Len(temp)=1 Then 
+	d = "0" & temp 
+Else
+	d= temp
+End If
+
+Dim timestamp:timestamp=y&m&d
+
 rem log the bhm forword syslog message
 Dim oFSO, oTS,bhmlog
 
 Set oFSO = WScript.CreateObject("Scripting.FileSystemObject")
 
-bhmlog = "D:\Program Files\HP\HP BTO Software\bin\bhm\bhm.log"
+bhmlog = "D:\Program Files\HP\HP BTO Software\bin\bhm\bhm_"&timestamp&".log"
 
 If oFSO.FileExists(bhmlog) Then 
 	Set oTS = oFSO.OpenTextFile(bhmlog,8)

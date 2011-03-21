@@ -7,7 +7,7 @@ rem On Error Resume Next
 ' use cscript to get output on the command prompt: 
 ' example: 
 ' 
-'   cscript bhm_veritas_findlog.vbs 
+'   cscript bhm_veritas_findlog.vbs vertias_install_dir
 '
 ' author:yangshengcheng@gzcss.net
 ' timestamp : 2011/03/03
