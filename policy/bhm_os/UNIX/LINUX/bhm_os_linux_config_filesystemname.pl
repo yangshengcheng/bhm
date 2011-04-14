@@ -46,32 +46,69 @@ sub  SendMsg
 	system("opcmsg  severity=${severity} application=${app} object=${obj} msg_grp=${msg_grp} msg_text=$msg_text");
 }
 
+
 sub  getCurr
 {
 	
 	my $fl = gensym();
 	my $line;
 	my @names=();
-	if(open($fl,"/bin/df|"))
+	eval
 	{
-		while($line = <$fl>)
-		{
-			if($line=~/(\S+)\s+\d+\s+\d+\s+\d+\s+\d+\%\s+\S+\s*/ || $line=~/^(\S+)\s*$/ )
-			{
-				my $name = $1;
-				push(@names,$name);
-			}
-		}
+		$SIG{ALRM} = sub{
+			system("ps -ef |grep  /bin/df|grep -v grep |awk '{print \$2}'|xargs kill -9");
+		};
 
-		close($fl);
-		return  @names;
-	}
-	else
+		alarm(5);
+		open($fl,"/bin/df|");
+
+			while($line = <$fl>)
+			{
+				if($line=~/(\S+)\s+\d+\s+\d+\s+\d+\s+\d+\%\s+\S+\s*/ || $line=~/^(\S+)\s*$/)
+				{
+					my $name = $1;
+					push(@names,$name);
+				}
+			}
+
+			close($fl);
+			alarm(0);
+
+	};
+	if($@)
 	{
 		&SendMsg("normal","invoke df  commad fail");
-		return @names ;
 	}
+	
+	return  @names;	
 }
+
+#sub  getCurr
+#{
+#	
+#	my $fl = gensym();
+#	my $line;
+#	my @names=();
+#	if(open($fl,"/bin/df|"))
+#	{
+#		while($line = <$fl>)
+#		{
+#			if($line=~/(\S+)\s+\d+\s+\d+\s+\d+\s+\d+\%\s+\S+\s*/ || $line=~/^(\S+)\s*$/ )
+#			{
+#				my $name = $1;
+#				push(@names,$name);
+#			}
+#		}
+#
+#		close($fl);
+#		return  @names;
+#	}
+#	else
+#	{
+#		&SendMsg("normal","invoke df  commad fail");
+#		return @names ;
+#	}
+#}
 
 sub  getLast
 {
