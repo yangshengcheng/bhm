@@ -6,7 +6,7 @@
 
 #date: 2010-6-12 
 
-#usage: osspi_perl.sh  bhm_os_aix_event_filesystemstat.pl -m filesystemMountPoint  -t thresholdValue -s avaliableSize
+#usage: osspi_perl.sh  bhm_os_aix_event_filesystemstat.pl -f filesystemMountPoint  -t thresholdValue -s avaliableSize
 
 #parameter: filesystemMountPoint,thresholdValue ,avaliableSize(MB)
 
@@ -55,6 +55,11 @@ sub  checkFileSystem
 	my $fl = gensym();
 	my $line;
 	my ($f_temp,$t_temp,$s_temp) = ();
+
+	$SIG{ALRM} = sub{system("ps -ef |grep  /usr/bin/df|grep -v grep |awk '{print \$2}'|xargs kill -9");};
+
+	alarm(5);
+
 	if(open($fl,"/usr/bin/df -m|"))
 	{
 		while($line = <$fl>)
