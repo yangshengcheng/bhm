@@ -52,25 +52,34 @@ sub  getCurr
 	my $fl = gensym();
 	my $line;
 	my @names=();
-	if(open($fl,"/usr/bin/bdf|"))
+	eval
 	{
-		while($line = <$fl>)
-		{
-			if($line=~/(\S+)\s+\d+\s+\d+\s+\d+\s+\d+\%\s+\S+\s*/i)
-			{
-				my $name = $1;
-				push(@names,$name);
-			}
-		}
+		$SIG{ALRM} = sub{
+			system("ps -ef |grep  /usr/bin/bdf|grep -v grep |awk '{print \$2}'|xargs kill -9");
+		};
 
-		close($fl);
-		return  @names;
-	}
-	else
+		alarm(5);
+		open($fl,"/usr/bin/bdf|");
+
+			while($line = <$fl>)
+			{
+				if($line=~/(\S+)\s+\d+\s+\d+\s+\d+\s+\d+\%\s+\S+\s*/i)
+				{
+					my $name = $1;
+					push(@names,$name);
+				}
+			}
+
+			close($fl);
+			alarm(0);
+
+	};
+	if($@)
 	{
 		&SendMsg("normal","invoke bdf  commad fail");
-		return @names ;
 	}
+	
+	return  @names;	
 }
 
 sub  getLast
