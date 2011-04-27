@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : bhm_tomcat6_mbean.xml
+    Created on : 2011/4/21
+    Author     : yangshengcheng@gzcss.net
+    Description:
+        Purpose of the document follows.
+-->
+
+<MetricDefinitions>
+
+<!-- memoryPool usage  -->
+
+<Metrics>
+	<class>TOMCAT_MEMORYPOOL</class>
+    <MetricName>Tomcat_CodeCache_Usage</MetricName>
+    <instance>CodeCache</instance>
+    <ObjectName>java.lang:type=MemoryPool,name=Code Cache</ObjectName>
+    <Attribute>Usage</Attribute>
+	<type>CompositeDataSupport</type>
+</Metrics>
+<Metrics>
+	<class>TOMCAT_MEMORYPOOL</class>
+    <MetricName>Tomcat_EdenSpace_Usage</MetricName>
+    <instance>EdenSpace</instance>
+    <ObjectName>java.lang:type=MemoryPool,name=Eden Space</ObjectName>
+    <Attribute>Usage</Attribute>
+	<type>CompositeDataSupport</type>
+</Metrics>
+<Metrics>
+	<class>TOMCAT_MEMORYPOOL</class>
+    <MetricName>Tomcat_PermGen_Usage</MetricName>
+    <instance>PermGen</instance>
+    <ObjectName>java.lang:type=MemoryPool,name=Perm Gen</ObjectName>
+    <Attribute>Usage</Attribute>
+	<type>CompositeDataSupport</type>
+</Metrics>
+<Metrics>
+	<class>TOMCAT_MEMORYPOOL</class>
+    <MetricName>Tomcat_PermGenSRO_Usage</MetricName>
+    <instance>PermGenSRO</instance>
+    <ObjectName>java.lang:type=MemoryPool,name=Perm Gen [shared-ro]</ObjectName>
+    <Attribute>Usage</Attribute>
+	<type>CompositeDataSupport</type>
+</Metrics>
+<Metrics>
+	<class>TOMCAT_MEMORYPOOL</class>
+    <MetricName>Tomcat_PermGenSRW_Usage</MetricName>
+    <instance>PermGenSRW</instance>
+    <ObjectName>java.lang:type=MemoryPool,name=Perm Gen [shared-rw]</ObjectName>
+    <Attribute>Usage</Attribute>
+	<type>CompositeDataSupport</type>
+</Metrics>
+
+<Metrics>
+	<class>TOMCAT_MEMORYPOOL</class>
+    <MetricName>Tomcat_SurvivorSpace_Usage</MetricName>
+    <instance>SurvivorSpace</instance>
+    <ObjectName>java.lang:type=MemoryPool,name=Survivor Space</ObjectName>
+    <Attribute>Usage</Attribute>
+	<type>CompositeDataSupport</type>
+</Metrics>
+<Metrics>
+	<class>TOMCAT_MEMORYPOOL</class>
+    <MetricName>Tomcat_TenuredGen_Usage</MetricName>
+    <instance>TenuredGen</instance>
+    <ObjectName>java.lang:type=MemoryPool,name=Tenured Gen</ObjectName>
+    <Attribute>Usage</Attribute>
+	<type>CompositeDataSupport</type>
+</Metrics>
+
+<!-- threading -->
+<Metrics>
+	<class>TOMCAT_THREAD</class>
+    <MetricName>Tomcat_ThreadCount</MetricName>
+    <instance>thread</instance>
+    <ObjectName>java.lang:type=Threading</ObjectName>
+    <Attribute>ThreadCount</Attribute>
+	<type>integer</type>
+</Metrics>
+
+
+<!-- class loading-->
+<Metrics>
+	<class>TOMCAT_CLASS</class>
+    <MetricName>Tomcat_LoadedClassCount</MetricName>
+    <instance>class</instance>
+    <ObjectName>java.lang:type=ClassLoading</ObjectName>
+    <Attribute>LoadedClassCount</Attribute>
+	<type>integer</type>
+</Metrics>
+
+<!-- global request-->
+<Metrics>
+	<class>TOMCAT_GLOBAL</class>
+    <MetricName>Tomcat_requestCount</MetricName>
+    <instance>NULL</instance>
+    <ObjectName>Catalina:type=GlobalRequestProcessor,name=http-8080</ObjectName>
+    <Attribute>requestCount</Attribute>
+	<type>integer</type>
+</Metrics>
+
+<Metrics>
+	<class>TOMCAT_GLOBAL</class>
+    <MetricName>Tomcat_processingTime</MetricName>
+    <instance>NULL</instance>
+    <ObjectName>Catalina:type=GlobalRequestProcessor,name=http-8080</ObjectName>
+    <Attribute>processingTime</Attribute>
+	<type>integer</type>
+</Metrics>
+
+<Metrics>
+	<class>TOMCAT_GLOBAL</class>
+    <MetricName>Tomcat_bytesSent</MetricName>
+    <instance>NULL</instance>
+    <ObjectName>Catalina:type=GlobalRequestProcessor,name=http-8080</ObjectName>
+    <Attribute>bytesSent</Attribute>
+	<type>integer</type>
+</Metrics>
+
+<Metrics>
+	<class>TOMCAT_GLOBAL</class>
+    <MetricName>Tomcat_bytesReceived</MetricName>
+    <instance>NULL</instance>
+    <ObjectName>Catalina:type=GlobalRequestProcessor,name=http-8080</ObjectName>
+    <Attribute>bytesReceived</Attribute>
+	<type>integer</type>
+</Metrics>
+
+<Metrics>
+	<class>TOMCAT_GLOBAL</class>
+    <MetricName>Tomcat_errorCount</MetricName>
+    <instance>NULL</instance>
+    <ObjectName>Catalina:type=GlobalRequestProcessor,name=http-8080</ObjectName>
+    <Attribute>errorCount</Attribute>
+	<type>integer</type>
+</Metrics>
+
+</MetricDefinitions>
