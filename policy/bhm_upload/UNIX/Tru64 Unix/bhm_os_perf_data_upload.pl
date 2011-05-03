@@ -1,11 +1,12 @@
 #!/usr/bin/perl -w
 #author: yangshengcheng@gzcss.net
-#date: 2010/12/13
+#date: 2011/04/27
 #usage: invoked by ovo scheduled task  policy (bhm_os_perf_data_upload)
 #parameter: no
 #description: upload  all performent data to data server
 #Categories : bhm  policy
-#update : change the os cpu usage data source ,get it from os counter
+#update (this update abandon): change the os cpu usage data source ,get it from os counter
+#update : get os cpu util from ovcodautil -support
 
 
 use Net::FTP;
@@ -178,9 +179,51 @@ sub parserCoda
 {
 	my %temp_hash=();
 	my @temp=();
+	my $mon =strftime("%m",localtime);my $day=strftime("%d",localtime);my $hour=strftime("%H",localtime);my $min = strftime("%M",localtime);my $sec=strftime("%S",localtime);
 	
 	#collect the agent golden coda data
+	#add new data source
+	if($osname=~/win/i)
+	{
+		unless(open(CS,"ovcodautil -support|"))
+		{
+        &opcMsg("critical","\'execute  ovcodautil  fail \'");
+        &log_ftp_err("execute  ovcodautil  fail");	
+        exit 1;		
+		}
+	}
+	else
+	{
+		unless(open(CS,"${ov_install_bin_dir}/ovcodautil -support|"))
+		{
+        &opcMsg("critical","\'execute  ovcodautil  fail \'");
+        &log_ftp_err("execute  ovcodautil  fail");	
+        exit 1;					
+		}
+	}
+
+	my $line;
+	while($line=<CS>)
+	{
+		if($line=~/(GBL\w+)\s+:\s+(.+)/)
+		{
+			my $metric=$1;my $value=$2;
+			$temp_hash{$metric}->{'timestamp'}=$year.$mon.$day.$hour.$min.$sec;
+			$temp_hash{$metric}->{'class'}='GLOBAL';
+			$temp_hash{$metric}->{'instance_name'}='NULL';
+			$temp_hash{$metric}->{'value'}=$value;			
+		}
+		else
+		{
+			next;
+		}
+	}
+
 	
+	close(CS);
+
+	
+	#old data source
 	
 	if($osname=~/win/i)
 	{
@@ -205,23 +248,25 @@ sub parserCoda
 		while(my $line=<CODA>)
 		{
 			
-			if($line=~/^(\d+)\/(\d+)\/\d+\s+(\d+):(\d+):(\d+)(.*?)\|(\w+)\s*\|(.+?)\|/)
+			if($line=~/.*?\|(\w+)\s*\|(.+?)\|/)
 			{
+#					print $line;
+#					my $AMPM= $5;
+					my $metric=$1;my $value=$2;
+					next if($metric=~/GBL_/i);
+#					if($AMPM && $AMPM =~/PM/i)
+#					{
+#						$hour = $hour +  12;
+#					}
 					
-					my $mon = $1;my $day=$2;my $hour=$3;my $min = $4;my $sec=$5;my $AMPM= $6;my $metric=$7;my $value=$8;
-					next if($metric=~/GBL_CPU/i);
-					if($AMPM && $AMPM =~/PM/i)
-					{
-						$hour = $hour +  12;
-					}
-					
-					if($metric=~/GBL_/i)
-					{
-						$temp_hash{$metric}->{'timestamp'}=$year.$mon.$day.$hour.$min.$sec;
-						$temp_hash{$metric}->{'class'}='GLOBAL';
-						$temp_hash{$metric}->{'instance_name'}='NULL';
-						$temp_hash{$metric}->{'value'}=$value;
-					}
+#					if($metric=~/GBL_/i)
+#					{
+##						print $metric."\n";
+#						$temp_hash{$metric}->{'timestamp'}=$year.$mon.$day.$hour.$min.$sec;
+#						$temp_hash{$metric}->{'class'}='GLOBAL';
+#						$temp_hash{$metric}->{'instance_name'}='NULL';
+#						$temp_hash{$metric}->{'value'}=$value;
+#					}
 					
 						if($metric=~/BYCPU_/i)
 						{
@@ -299,148 +344,17 @@ sub parserCoda
 			close(CODA);
 			
 			###flush the buff to data file
+#			foreach my $a (keys %temp_hash)
+#			{
+#				print $a."->".$temp_hash{$a}->{'timestamp'}."\n";
+#				print $a."->".$temp_hash{$a}->{'class'}."\n";
+#				print $a."->".$temp_hash{$a}->{'instance_name'}."\n";
+#				print $a."->".$temp_hash{$a}->{'value'}."\n";
+#			}
 			&flush(\%temp_hash,\@temp);
 		
 }
 
-#parser coda metric with config file
-sub parserCoda2
-{
-	
-	my ($hash_ref)=@_;
-	my %temp_hash=();
-	my @temp=();
-	
-		#collect the agent golden coda data
-	
-	
-	if($osname=~/win/i)
-	{
-		unless(open(CODA,"ovcodautil -dumpds coda|"))
-		{
-				&opcMsg("critical","\'execute ovcodautil  fail\'");
-        &log_ftp_err("execute ovcodautil fail");
-        exit 1; 			
-		}
-	}
-	else
-	{
-		unless(open(CODA,"${ov_install_bin_dir}/ovcodautil -dumpds coda|"))
-		{
-				&opcMsg("critical","\'execute ovcodautil  fail\'");
-        &log_ftp_err("execute ovcodautil fail");
-        exit 1; 			
-		}
-	}
-	
-	
-		while(my $line=<CODA>)
-		{
-			
-			if($line=~/^(\d+)\/(\d+)\/\d+\s+(\d+):(\d+):(\d+)(.*?)\|(\w+)\s*\|(.+?)\|/)
-			{
-					
-					my $mon = $1;my $day=$2;my $hour=$3;my $min = $4;my $sec=$5;my $AMPM= $6;my $metric=$7;my $value=$8;
-					if($AMPM && $AMPM =~/PM/i)
-					{
-						$hour = $hour +  12;
-					}
-					
-					if($metric=~/GBL_/i)
-					{
-						next unless(exists($hash_ref->{$metric}));
-						
-						$temp_hash{$metric}->{'timestamp'}=$year.$mon.$day.$hour.$min.$sec;
-						$temp_hash{$metric}->{'class'}='GLOBAL';
-						$temp_hash{$metric}->{'instance_name'}='NULL';
-						$temp_hash{$metric}->{'value'}=$value;
-					}
-					
-						if($metric=~/BYCPU_/i)
-						{
-							if($metric eq "BYCPU_ID")
-							{
-								$instance_name = $value;
-								next;
-							}
-							else
-							{
-								next unless(exists($hash_ref->{$metric}));
-								my $entry =$year.$mon.$day.$hour.$min.$sec.'|'.'CPU'.'|'.$metric.'|'.$instance_name.'|'.$value.'|'.$osname ;
-								push(@temp,$entry);
-							}
-						}
-						if($metric=~/BYNETIF_/i)
-						{
-							if($metric eq "BYNETIF_NAME")
-							{
-								$netif_instance_name = $value;
-								next;
-							}
-							if($netif_instance_name)
-							{
-								next unless(exists($hash_ref->{$metric}));
-								my $entry =$year.$mon.$day.$hour.$min.$sec.'|'.'NETIF'.'|'.$metric.'|'.$netif_instance_name.'|'.$value.'|'.$osname ;
-								push(@temp,$entry);
-							}
-						}
-						
-						if($metric=~/FS_/i)
-						{
-							if($osname=~/win/i)
-							{
-								if($metric eq "FS_DIRNAME")
-								{
-									$fs_instance_name = $value;
-									next;
-								}
-							}
-							else
-							{
-								if($metric eq "FS_DEVNAME")
-								{
-									$fs_instance_name = $value;
-									next;
-								}
-							}
-							
-							if($fs_instance_name)
-							{
-								next unless(exists($hash_ref->{$metric}));
-								my $entry =$year.$mon.$day.$hour.$min.$sec.'|'.'FILESYSTEM'.'|'.$metric.'|'.$fs_instance_name.'|'.$value.'|'.$osname ;
-								push(@temp,$entry);
-							}
-						}
-						
-						if($metric=~/BYDSK_/i)
-						{
-							if($metric eq "BYDSK_DEVNAME")
-							{
-								$disk_instance_name = $value;
-								next;
-							}
-							elsif($disk_instance_name)
-							{
-								next unless(exists($hash_ref->{$metric}));
-								my $entry =$year.$mon.$day.$hour.$min.$sec.'|'.'DISK'.'|'.$metric.'|'.$disk_instance_name.'|'.$value.'|'.$osname ;
-								push(@temp,$entry);
-							}
-							
-						}
-								
-			}
-
-		}
-			
-			close(CODA);
-			
-			#caculate 
-			&caculate(\%temp_hash);
-			
-			###flush the buff to data file
-			&flush(\%temp_hash,\@temp);
-		
-}
 # parser BHM_OS_PERF source 
 sub parserBHM_OS_PERF
 {
@@ -473,14 +387,11 @@ sub parserBHM_OS_PERF
 		while(my $line=<BHM_OS_PERF>)
 		{
 			
-			if($line=~/^(\d+)\/(\d+)\/\d+\s+(\d+):(\d+):(\d+)(.*?)\|(\w+)\s*\|(.+?)\|/)
+			if($line=~/.*?\|(\w+)\s*\|(.+?)\|/)
 			{
-					
-					my $mon = $1;my $day=$2;my $hour=$3;my $min = $4;my $sec=$5;my $AMPM= $6;my $metric=$7;my $value=$8;
-					if($AMPM && $AMPM =~/PM/i)
-					{
-						$hour = $hour +  12;
-					}
+					#print $line;
+					my $metric=$1;my $value=$2;
+					my $mon =strftime("%m",localtime);my $day=strftime("%d",localtime);my $hour=strftime("%H",localtime);my $min = strftime("%M",localtime);my $sec=strftime("%S",localtime);
 					
 					unless( $metric=~/InstanceName/i)
 					{
@@ -495,12 +406,12 @@ sub parserBHM_OS_PERF
 		close(BHM_OS_PERF);
 
 		#caculate 
-		&caculate(\%temp_hash);
+		#&caculate(\%temp_hash);
 
 
-			###flush the buff to data file
-			&flush(\%temp_hash,\@temp);
-	return  1;
+		###flush the buff to data file
+		&flush(\%temp_hash,\@temp);
+		return  1;
 
 }
 
@@ -747,6 +658,7 @@ sub  flush
 			
 			foreach my $key (keys %{$hasl_ref})
 			{
+				#print $hasl_ref->{$key}->{'timestamp'}.'|'.$hasl_ref->{$key}->{'class'}.'|'.$key.'|'.$hasl_ref->{$key}->{'instance_name'}.'|'.$hasl_ref->{$key}->{'value'}.'|'.$osname."\n";
 				print $fl $hasl_ref->{$key}->{'timestamp'}.'|'.$hasl_ref->{$key}->{'class'}.'|'.$key.'|'.$hasl_ref->{$key}->{'instance_name'}.'|'.$hasl_ref->{$key}->{'value'}.'|'.$osname."\n";
 			}
 			
@@ -1168,6 +1080,15 @@ if($osname=~/aix/i)
 
 #	print "weblogic parser\n";
 &merge_func("weblogic_");
+
+# load mssql perf metric
+&merge_func("mssql_");
+
+#load iis perf  metric
+&merge_func("iis_");
+
+#load iis perf  metric
+&merge_func("tomcat_");
 
 #upload the data file
 if(-e "${agent_data_dir}$filename")
