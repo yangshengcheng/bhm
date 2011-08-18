@@ -36,6 +36,8 @@
     <Attribute>Usage</Attribute>
 	<type>CompositeDataSupport</type>
 </Metrics>
+
+<!-- 以下两个类型的mbean不一定存在 -->
 <Metrics>
 	<class>TOMCAT_MEMORYPOOL</class>
     <MetricName>Tomcat_PermGenSRO_Usage</MetricName>

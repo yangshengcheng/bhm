@@ -5,12 +5,12 @@ SET CLASSPATH=%CLASSPATH%;%OvDataDir%\bin\instrumentation\jdom.jar;%OvDataDir%\b
 SET EXECUTEDIR=%OvDataDir%\bin\instrumentation
 
 rem set for local test,delete this after test
-rem SET EXECUTEDIR=F:\BHM\policy\bhm_tomcat6\Windows
+rem SET EXECUTEDIR=F:\BHM\policy\bhm_tomcat\Windows
 rem SET CLASSPATH=%CLASSPATH%;%EXECUTEDIR%\jdom.jar;%EXECUTEDIR%\commons-cli-1.2.jar;
 
 chdir /D %EXECUTEDIR%
 
-SET JMXDIR="%EXECUTEDIR%\jmx
+SET JMXDIR="%EXECUTEDIR%\jmx"
 
 IF NOT EXIST %JMXDIR% (
 	MKDIR %JMXDIR%
@@ -25,6 +25,6 @@ if NOT EXIST %CLASSFILE% (
 	copy /Y "%EXECUTEDIR%\TomcatMbeanQuery.class" "%EXECUTEDIR%\jmx\TomcatMbeanQuery.class"
 )
 
-"%JAVA_HOME%\bin\java.exe" jmx.TomcatMbeanQuery -p %1 -f bhm_tomcat6_mbean.xml 
+"%JAVA_HOME%\bin\java.exe" jmx.TomcatMbeanQuery %*
 
 :END

@@ -220,7 +220,7 @@ public class TomcatMbeanQuery {
 	//将查询结果写入数据文件或输出到标准输出
 	private  boolean flush(HashMap<Integer,HashMap<Object,Object>> hm,String dataFile) throws Exception
 	{
-		String ostype = "MSWin32";
+		String ostype = this.getOsType();
 		Set s = hm.keySet();
 		if(dataFile == null || dataFile.equals(""))
 		{
@@ -511,6 +511,22 @@ public class TomcatMbeanQuery {
 		
 		return b;
 		
-	}
+	}//MbeanExists
+	
+	private String getOsType()
+	{
+		if(System.getProperty("os.name").toLowerCase().indexOf("win") > -1)
+		{
+			return "MSWin32";
+		}
+		else if(System.getProperty("os.name").toLowerCase().indexOf("hpux")> -1)
+		{
+			return "HP-UX";
+		}
+		else
+		{
+			return System.getProperty("os.name");
+		}
+	}//getOsType
 	   
 }   
