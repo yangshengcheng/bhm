@@ -1,0 +1,1 @@
+show global status where Variable_name in ('Threads_connected','Threads_running','connections','Key_reads','Key_read_requests','Qcache_hits','Qcache_inserts','Table_locks_immediate','Table_locks_waited')
