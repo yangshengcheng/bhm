@@ -313,9 +313,6 @@ our $bhm_ftp_err_log;
 
 
 &check_env();
-#change to ovo instrumentation dir
-chdir($metric_config_file);
-
 &genDir($agent_data_dir);
 &genDir($bhm_ftp_temp_dir);
 

@@ -158,7 +158,7 @@ sub  parserWeblogic
 					my @rez=`wasspi_wls_perl  -S wasspi_wls_ca -a  -mbean "*:*,Type=${mbean}" -get  ${attribute}`;
 					foreach (@rez)
 					{
-						
+						print $_;
 						if($_=~/(\S+)\s*\|(.+?)\|(.+?)\|(.+?)\|\s*(\S+)/)
 						{
 							#print $_;
