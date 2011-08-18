@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : bhm_wls_mbean.xml
+    Created on : 2011/7/5
+    Author     : yangshengcheng@gzcss.net
+    
+    Description:
+        Purpose of the document follows.
+-->
+
+<MetricDefinitions>
+
+<!-- jvm -->
+
+<Metrics>
+	<class>WLSSPI_UDM_METRICS</class>
+    <MetricName>WLSSPI_0751</MetricName>
+    <instance>null</instance>
+    <ObjectNames>
+    	<ObjectName>com.bea:Name=AdminServer,ServerRuntime=AdminServer,Location=AdminServer,Type=JVMRuntime</ObjectName>
+    </ObjectNames>
+    <Attribute>HeapFreePercent</Attribute>
+	<type>double</type>
+</Metrics>
+
+<Metrics>
+	<class>WLSSPI_UDM_METRICS</class>
+    <MetricName>WLSSPI_0705</MetricName>
+    <instance>null</instance>
+    <ObjectNames>
+	    <ObjectName>com.bea:MessageDrivenEJBRuntime=uuid-3542834670b3c8da--719cfbff-1314f7eadae--7feb_weblogic.wsee.DefaultQueue,Name=uuid-3542834670b3c8da--719cfbff-1314f7eadae--7feb_weblogic.wsee.DefaultQueue,ServerRuntime=AdminServer,Location=AdminServer,ApplicationRuntime=bea_wls9_async_response,Type=EJBPoolRuntime,EJBComponentRuntime=uuid-3542834670b3c8da--719cfbff-1314f7eadae--7fec_dynamic_internal</ObjectName>
+		<ObjectName>com.bea:MessageDrivenEJBRuntime=uuid-3542834670b3c8da--719cfbff-1314f7eadae--7ff3_weblogic.wsee.DefaultQueue,Name=uuid-3542834670b3c8da--719cfbff-1314f7eadae--7ff3_weblogic.wsee.DefaultQueue,ServerRuntime=AdminServer,Location=AdminServer,ApplicationRuntime=bea_wls9_async_response,Type=EJBPoolRuntime,EJBComponentRuntime=uuid-3542834670b3c8da--719cfbff-1314f7eadae--7ff4_dynamic_internal</ObjectName>
+		<ObjectName>com.bea:MessageDrivenEJBRuntime=uuid-3542834670b3c8da--719cfbff-1314f7eadae--7fed_weblogic.wsee.DefaultQueue,Name=uuid-3542834670b3c8da--719cfbff-1314f7eadae--7fed_weblogic.wsee.DefaultQueue,ServerRuntime=AdminServer,Location=AdminServer,ApplicationRuntime=bea_wls9_async_response,Type=EJBPoolRuntime,EJBComponentRuntime=uuid-3542834670b3c8da--719cfbff-1314f7eadae--7fee_dynamic_internal</ObjectName>
+		<ObjectName>com.bea:MessageDrivenEJBRuntime=uuid-3542834670b3c8da--719cfbff-1314f7eadae--7ff5_weblogic.wsee.DefaultQueue,Name=uuid-3542834670b3c8da--719cfbff-1314f7eadae--7ff5_weblogic.wsee.DefaultQueue,ServerRuntime=AdminServer,Location=AdminServer,ApplicationRuntime=bea_wls9_async_response,Type=EJBPoolRuntime,EJBComponentRuntime=uuid-3542834670b3c8da--719cfbff-1314f7eadae--7ff6_dynamic_internal</ObjectName>
+		<ObjectName>com.bea:MessageDrivenEJBRuntime=uuid-3542834670b3c8da--719cfbff-1314f7eadae--7ff1_weblogic.wsee.DefaultQueue,Name=uuid-3542834670b3c8da--719cfbff-1314f7eadae--7ff1_weblogic.wsee.DefaultQueue,ServerRuntime=AdminServer,Location=AdminServer,ApplicationRuntime=bea_wls9_async_response,Type=EJBPoolRuntime,EJBComponentRuntime=uuid-3542834670b3c8da--719cfbff-1314f7eadae--7ff2_dynamic_internal</ObjectName>
+		<ObjectName>com.bea:Name=DeployerBean,ServerRuntime=AdminServer,Location=AdminServer,ApplicationRuntime=bea_wls_remote_deployer,Type=EJBPoolRuntime,EJBComponentRuntime=bea_wls_remote_deployer,StatelessEJBRuntime=DeployerBean</ObjectName>
+		<ObjectName>com.bea:Name=Mejb,ServerRuntime=AdminServer,Location=AdminServer,ApplicationRuntime=mejb,Type=EJBPoolRuntime,EJBComponentRuntime=mejb,StatelessEJBRuntime=Mejb</ObjectName>
+		<ObjectName>com.bea:MessageDrivenEJBRuntime=uuid-3542834670b3c8da--719cfbff-1314f7eadae--7fef_weblogic.wsee.DefaultQueue,Name=uuid-3542834670b3c8da--719cfbff-1314f7eadae--7fef_weblogic.wsee.DefaultQueue,ServerRuntime=AdminServer,Location=AdminServer,ApplicationRuntime=bea_wls9_async_response,Type=EJBPoolRuntime,EJBComponentRuntime=uuid-3542834670b3c8da--719cfbff-1314f7eadae--7ff0_dynamic_internal</ObjectName>
+    </ObjectNames>
+    <Attribute>AccessTotalCount</Attribute>
+	<type>double</type>
+</Metrics>
+
+
+</MetricDefinitions>

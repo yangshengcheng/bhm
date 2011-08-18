@@ -1,0 +1,1946 @@
+<Stats name="server" statType="null" il="-2" type="SERVER">
+<Stats name="ExtensionRegistryStats.name" statType="com.ibm.websphere.pmi.xml.ExtensionRegistryModule" il="-2" type="MODULE">
+</Stats>
+<Stats name="Security Authentication" statType="com.ibm.ws.security.stat.SecurityAuthenticationStats" il="-2" type="MODULE">
+<CS id="1" sT="1306766373198" lST="1308823811525" ct="1998">
+</CS>
+<CS id="3" sT="1306766373198" lST="1306766373198" ct="0">
+</CS>
+<CS id="4" sT="1306766373198" lST="1306766373198" ct="0">
+</CS>
+<CS id="5" sT="1306766373198" lST="1306766373198" ct="0">
+</CS>
+<CS id="6" sT="1306766373198" lST="1306766373198" ct="0">
+</CS>
+<CS id="7" sT="1306766373198" lST="1306766373198" ct="0">
+</CS>
+<CS id="8" sT="1306766373198" lST="1306766373198" ct="0">
+</CS>
+<CS id="9" sT="1306766373198" lST="1306766373198" ct="0">
+</CS>
+<TS id="10" sT="1306766373205" lST="1308823811525" ct="1998" max="257" min="0" sOS="158652.0" tot="2452">
+</TS>
+<TS id="12" sT="1306766373205" lST="1306766373205" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<TS id="13" sT="1306766373205" lST="1306766373205" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<TS id="14" sT="1306766373205" lST="1306766373205" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<TS id="15" sT="1306766373205" lST="1306766373205" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<TS id="16" sT="1306766373205" lST="1306766373205" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<TS id="17" sT="1306766373205" lST="1306766373205" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<TS id="18" sT="1306766373205" lST="1306766373205" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+</Stats>
+<Stats name="Security Authorization" statType="com.ibm.ws.security.stat.SecurityAuthorizationStats" il="-2" type="MODULE">
+<TS id="1" sT="1306766376630" lST="1308823811525" ct="2810" max="305" min="0" sOS="93944.0" tot="1026">
+</TS>
+<TS id="2" sT="1306766376630" lST="1306780689607" ct="348" max="1" min="0" sOS="13.0" tot="14">
+</TS>
+<TS id="3" sT="1306766376630" lST="1308825642131" ct="9504" max="748" min="0" sOS="560554.0" tot="1516">
+</TS>
+</Stats>
+<Stats name="SipContainerModule" statType="com.ibm.ws.sip.container.was.pmi.SipContainerModule" il="-2" type="MODULE">
+<Stats name="SipContainer" statType="com.ibm.ws.sip.container.was.pmi.SipContainerModule" il="-2" type="COLLECTION">
+</Stats>
+</Stats>
+<Stats name="beanModule" statType="beanModule#" il="-2" type="MODULE">
+<CS id="1" sT="1306766401916" lST="1306768316125" ct="8">
+</CS>
+<CS id="2" sT="1306766401916" lST="1306768061258" ct="1">
+</CS>
+<RS id="9" sT="1306766401916" lST="1308825642131" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+<CS id="11" sT="1306766401916" lST="1306780689606" ct="347">
+</CS>
+<TS id="12" sT="1306766401916" lST="1306780689611" ct="348" max="1900" min="0" sOS="4492362.0" tot="7208">
+</TS>
+<RS id="25" sT="1306766401917" lST="1308825642131" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+<CS id="26" sT="1306766401917" lST="1306768061258" ct="0">
+</CS>
+<RS id="34" sT="1306766401917" lST="1308825642131" lWM="0" hWM="1" cur="1" int="2.058635617E9"></RS>
+<RS id="35" sT="1306766401917" lST="1308825642131" lWM="-1" hWM="7" cur="6" int="1.2355252006E10"></RS>
+<Stats name="ivtApp#ivtEJB.jar" statType="beanModule#" il="-2" type="COLLECTION">
+<CS id="1" sT="1306766401917" lST="1306766402027" ct="1">
+</CS>
+<CS id="2" sT="1306766401917" lST="1306766402090" ct="1">
+</CS>
+<RS id="9" sT="1306766401917" lST="1308825642131" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+<CS id="11" sT="1306766401917" lST="1306766402090" ct="7">
+</CS>
+<TS id="12" sT="1306766401917" lST="1306766402091" ct="7" max="46" min="0" sOS="2118.0" tot="48">
+</TS>
+<RS id="25" sT="1306766401917" lST="1308825642131" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+<CS id="26" sT="1306766401917" lST="1306766401923" ct="0">
+</CS>
+<RS id="34" sT="1306766401917" lST="1308825642131" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+<RS id="35" sT="1306766401918" lST="1308825642131" lWM="0" hWM="1" cur="0" int="63.0"></RS>
+<Stats name="ejb.stateful" statType="beanModule#ejb.stateful" il="-2" type="COLLECTION">
+<CS id="1" sT="1306766401918" lST="1306766402027" ct="1">
+</CS>
+<CS id="2" sT="1306766401918" lST="1306766402090" ct="1">
+</CS>
+<CS id="11" sT="1306766401918" lST="1306766402090" ct="7">
+</CS>
+<TS id="12" sT="1306766401918" lST="1306766402091" ct="7" max="46" min="0" sOS="2118.0" tot="48">
+</TS>
+<RS id="34" sT="1306766401918" lST="1308825642131" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+<RS id="35" sT="1306766401918" lST="1308825642131" lWM="0" hWM="1" cur="0" int="63.0"></RS>
+<Stats name="ivtEJBObject" statType="beanModule#ejb.stateful" il="-2" type="COLLECTION">
+<CS id="1" sT="1306766401922" lST="1306766402027" ct="1">
+</CS>
+<CS id="2" sT="1306766401922" lST="1306766402090" ct="1">
+</CS>
+<CS id="11" sT="1306766401922" lST="1306766402090" ct="7">
+</CS>
+<TS id="12" sT="1306766401922" lST="1306766402091" ct="7" max="46" min="0" sOS="2118.0" tot="48">
+</TS>
+<RS id="34" sT="1306766401922" lST="1308825642131" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+<RS id="35" sT="1306766401922" lST="1308825642131" lWM="0" hWM="1" cur="0" int="63.0"></RS>
+<Stats name="beanModule.methods" statType="beanModule#beanModule.methods" il="-2" type="COLLECTION">
+</Stats>
+</Stats>
+</Stats>
+</Stats>
+<Stats name="PlantsByWebSphere#PlantsByWebSphereEJB.jar" statType="beanModule#" il="-2" type="COLLECTION">
+<CS id="1" sT="1306767934581" lST="1306768316125" ct="7">
+</CS>
+<CS id="2" sT="1306767934581" lST="1306768061258" ct="0">
+</CS>
+<RS id="9" sT="1306767934581" lST="1308825642131" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+<CS id="11" sT="1306767934581" lST="1306780689606" ct="340">
+</CS>
+<TS id="12" sT="1306767934581" lST="1306780689611" ct="341" max="1900" min="0" sOS="4490244.0" tot="7160">
+</TS>
+<RS id="25" sT="1306767934581" lST="1308825642131" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+<CS id="26" sT="1306767934581" lST="1306768061258" ct="0">
+</CS>
+<RS id="34" sT="1306767934581" lST="1308825642131" lWM="0" hWM="1" cur="1" int="2.057103403E9"></RS>
+<RS id="35" sT="1306767934581" lST="1308825642131" lWM="-1" hWM="7" cur="6" int="1.2346056099E10"></RS>
+<Stats name="ejb.stateless" statType="beanModule#ejb.stateless" il="-2" type="COLLECTION">
+<CS id="1" sT="1306767934582" lST="1306768316125" ct="7">
+</CS>
+<CS id="2" sT="1306767934582" lST="1306767934671" ct="0">
+</CS>
+<CS id="11" sT="1306767934582" lST="1306780689606" ct="335">
+</CS>
+<TS id="12" sT="1306767934582" lST="1306780689611" ct="336" max="1900" min="2" sOS="4489983.0" tot="7141">
+</TS>
+<RS id="35" sT="1306767934582" lST="1308825642131" lWM="0" hWM="7" cur="7" int="1.4403159496E10"></RS>
+<Stats name="Catalog" statType="beanModule#ejb.stateless" il="-2" type="COLLECTION">
+<CS id="1" sT="1306767934582" lST="1306768316125" ct="7">
+</CS>
+<CS id="2" sT="1306767934582" lST="1306767934582" ct="0">
+</CS>
+<CS id="11" sT="1306767934582" lST="1306780689606" ct="335">
+</CS>
+<TS id="12" sT="1306767934582" lST="1306780689611" ct="336" max="1900" min="2" sOS="4489983.0" tot="7141">
+</TS>
+<RS id="35" sT="1306767934582" lST="1308825642131" lWM="0" hWM="7" cur="7" int="1.4403159496E10"></RS>
+<Stats name="beanModule.methods" statType="beanModule#beanModule.methods" il="-2" type="COLLECTION">
+</Stats>
+</Stats>
+<Stats name="Mailer" statType="beanModule#ejb.stateless" il="-2" type="COLLECTION">
+<CS id="1" sT="1306767934671" lST="1306767934671" ct="0">
+</CS>
+<CS id="2" sT="1306767934671" lST="1306767934671" ct="0">
+</CS>
+<CS id="11" sT="1306767934671" lST="1306767934671" ct="0">
+</CS>
+<TS id="12" sT="1306767934671" lST="1306767934671" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<RS id="35" sT="1306767934671" lST="1308825642131" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+<Stats name="beanModule.methods" statType="beanModule#beanModule.methods" il="-2" type="COLLECTION">
+</Stats>
+</Stats>
+</Stats>
+<Stats name="ejb.stateful" statType="beanModule#ejb.stateful" il="-2" type="COLLECTION">
+<CS id="1" sT="1306768061257" lST="1306768061257" ct="0">
+</CS>
+<CS id="2" sT="1306768061257" lST="1306768061257" ct="0">
+</CS>
+<CS id="11" sT="1306768061257" lST="1306768061505" ct="5">
+</CS>
+<TS id="12" sT="1306768061257" lST="1306768061506" ct="5" max="16" min="0" sOS="261.0" tot="19">
+</TS>
+<RS id="34" sT="1306768061257" lST="1308825642131" lWM="0" hWM="1" cur="1" int="2.056976765E9"></RS>
+<RS id="35" sT="1306768061257" lST="1308825642131" lWM="-1" hWM="0" cur="-1" int="-2.056976765E9"></RS>
+<Stats name="ShoppingCart" statType="beanModule#ejb.stateful" il="-2" type="COLLECTION">
+<CS id="1" sT="1306768061257" lST="1306768061257" ct="0">
+</CS>
+<CS id="2" sT="1306768061257" lST="1306768061257" ct="0">
+</CS>
+<CS id="11" sT="1306768061257" lST="1306768061505" ct="5">
+</CS>
+<TS id="12" sT="1306768061257" lST="1306768061506" ct="5" max="16" min="0" sOS="261.0" tot="19">
+</TS>
+<RS id="34" sT="1306768061257" lST="1308825642131" lWM="1" hWM="1" cur="1" int="2.056976765E9"></RS>
+<RS id="35" sT="1306768061257" lST="1308825642131" lWM="-1" hWM="-1" cur="-1" int="-2.056976765E9"></RS>
+<Stats name="beanModule.methods" statType="beanModule#beanModule.methods" il="-2" type="COLLECTION">
+</Stats>
+</Stats>
+</Stats>
+</Stats>
+</Stats>
+<Stats name="cacheModule" statType="com.ibm.websphere.pmi.xml.cacheModule_root,com.ibm.websphere.pmi.xml.cacheModule_template" il="-2" type="MODULE">
+<Stats name="Object: ws/WSSecureMap" statType="com.ibm.websphere.pmi.xml.cacheModule_root" il="-2" type="COLLECTION">
+<Stats name="cacheModule.objectCache" statType="com.ibm.websphere.pmi.xml.cacheModule_template" il="-2" type="MODULE">
+<Stats name="cacheModule.counters" statType="com.ibm.websphere.pmi.xml.cacheModule_template" il="-2" type="COLLECTION">
+</Stats>
+</Stats>
+</Stats>
+<Stats name="Object: ws/com.ibm.workplace/ExtensionRegistryCache" statType="com.ibm.websphere.pmi.xml.cacheModule_root" il="-2" type="COLLECTION">
+<Stats name="cacheModule.objectCache" statType="com.ibm.websphere.pmi.xml.cacheModule_template" il="-2" type="MODULE">
+<Stats name="cacheModule.counters" statType="com.ibm.websphere.pmi.xml.cacheModule_template" il="-2" type="COLLECTION">
+</Stats>
+</Stats>
+</Stats>
+<Stats name="Object: ws/com.ibm.ws.wssecurity.sctClientCacheMap" statType="com.ibm.websphere.pmi.xml.cacheModule_root" il="-2" type="COLLECTION">
+<Stats name="cacheModule.objectCache" statType="com.ibm.websphere.pmi.xml.cacheModule_template" il="-2" type="MODULE">
+<Stats name="cacheModule.counters" statType="com.ibm.websphere.pmi.xml.cacheModule_template" il="-2" type="COLLECTION">
+</Stats>
+</Stats>
+</Stats>
+<Stats name="Object: ws/com.ibm.ws.wssecurity.sctServiceCacheMap" statType="com.ibm.websphere.pmi.xml.cacheModule_root" il="-2" type="COLLECTION">
+<Stats name="cacheModule.objectCache" statType="com.ibm.websphere.pmi.xml.cacheModule_template" il="-2" type="MODULE">
+<Stats name="cacheModule.counters" statType="com.ibm.websphere.pmi.xml.cacheModule_template" il="-2" type="COLLECTION">
+</Stats>
+</Stats>
+</Stats>
+<Stats name="Object: ws/WSSecureMapNotShared" statType="com.ibm.websphere.pmi.xml.cacheModule_root" il="-2" type="COLLECTION">
+<Stats name="cacheModule.objectCache" statType="com.ibm.websphere.pmi.xml.cacheModule_template" il="-2" type="MODULE">
+<Stats name="cacheModule.counters" statType="com.ibm.websphere.pmi.xml.cacheModule_template" il="-2" type="COLLECTION">
+</Stats>
+</Stats>
+</Stats>
+</Stats>
+<Stats name="connectionPoolModule" statType="connectionPoolModule" il="-2" type="MODULE">
+<CS id="1" sT="1306766379527" lST="1306780662184" ct="11">
+</CS>
+<CS id="2" sT="1306766379533" lST="1306782462209" ct="9">
+</CS>
+<BRS id="5" lWM="0" hWM="7" cur="2" int="4.137793758E9" sT="1306766379533" lST="1308825642131" lB="0" uB="0">
+</BRS>
+<BRS id="6" lWM="0" hWM="7" cur="2" int="4.13778723E9" sT="1306766379533" lST="1308825642131" lB="0" uB="0">
+</BRS>
+<RS id="7" sT="1306766379533" lST="1308825642131" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+<RS id="9" sT="1306766379533" lST="1308825642131" lWM="0" hWM="100" cur="0" int="65280.0"></RS>
+<TS id="12" sT="1306766379534" lST="1306780689611" ct="341" max="1885" min="2" sOS="4382683.0" tot="6513">
+</TS>
+<TS id="13" sT="1306766379534" lST="1306766379645" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<Stats name="Derby JDBC Provider" statType="connectionPoolModule" il="-2" type="COLLECTION">
+<CS id="1" sT="1306766379604" lST="1306766379605" ct="0">
+</CS>
+<CS id="2" sT="1306766379604" lST="1306766379605" ct="0">
+</CS>
+<BRS id="5" lWM="0" hWM="0" cur="0" int="0.0" sT="1306766379604" lST="1308825642131" lB="0" uB="0">
+</BRS>
+<BRS id="6" lWM="0" hWM="0" cur="0" int="0.0" sT="1306766379604" lST="1308825642131" lB="0" uB="0">
+</BRS>
+<RS id="7" sT="1306766379604" lST="1308825642131" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+<RS id="9" sT="1306766379604" lST="1308825642131" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+<TS id="12" sT="1306766379604" lST="1306766379605" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<TS id="13" sT="1306766379605" lST="1306766379605" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<Stats name="DefaultDatasource" statType="connectionPoolModule" il="-2" type="COLLECTION">
+<CS id="1" sT="1306766379605" lST="1306766379605" ct="0">
+</CS>
+<CS id="2" sT="1306766379605" lST="1306766379605" ct="0">
+</CS>
+<BRS id="5" lWM="0" hWM="0" cur="0" int="0.0" sT="1306766379605" lST="1308825642131" lB="0" uB="0">
+</BRS>
+<BRS id="6" lWM="0" hWM="0" cur="0" int="0.0" sT="1306766379605" lST="1308825642131" lB="0" uB="0">
+</BRS>
+<RS id="7" sT="1306766379605" lST="1308825642131" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+<RS id="9" sT="1306766379605" lST="1308825642131" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+<TS id="12" sT="1306766379605" lST="1306766379605" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<TS id="13" sT="1306766379605" lST="1306766379605" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+</Stats>
+</Stats>
+<Stats name="Derby JDBC Provider (XA)" statType="connectionPoolModule" il="-2" type="COLLECTION">
+<CS id="1" sT="1306766379534" lST="1306766379537" ct="0">
+</CS>
+<CS id="2" sT="1306766379534" lST="1306766379537" ct="0">
+</CS>
+<BRS id="5" lWM="0" hWM="0" cur="0" int="0.0" sT="1306766379535" lST="1308825642131" lB="0" uB="0">
+</BRS>
+<BRS id="6" lWM="0" hWM="0" cur="0" int="0.0" sT="1306766379535" lST="1308825642131" lB="0" uB="0">
+</BRS>
+<RS id="7" sT="1306766379535" lST="1308825642131" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+<RS id="9" sT="1306766379535" lST="1308825642131" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+<TS id="12" sT="1306766379535" lST="1306766379536" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<TS id="13" sT="1306766379535" lST="1306766379537" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<Stats name="jdbc/DefaultEJBTimerDataSource" statType="connectionPoolModule" il="-2" type="COLLECTION">
+<CS id="1" sT="1306766379535" lST="1306766379535" ct="0">
+</CS>
+<CS id="2" sT="1306766379535" lST="1306766379535" ct="0">
+</CS>
+<BRS id="5" lWM="0" hWM="0" cur="0" int="0.0" sT="1306766379535" lST="1308825642131" lB="0" uB="0">
+</BRS>
+<BRS id="6" lWM="0" hWM="0" cur="0" int="0.0" sT="1306766379535" lST="1308825642131" lB="0" uB="0">
+</BRS>
+<RS id="7" sT="1306766379535" lST="1308825642131" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+<RS id="9" sT="1306766379536" lST="1308825642131" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+<TS id="12" sT="1306766379536" lST="1306766379536" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<TS id="13" sT="1306766379537" lST="1306766379537" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+</Stats>
+</Stats>
+<Stats name="Samples Derby JDBC Provider (XA)" statType="connectionPoolModule" il="-2" type="COLLECTION">
+<CS id="1" sT="1306766379624" lST="1306780662184" ct="11">
+</CS>
+<CS id="2" sT="1306766379624" lST="1306782462209" ct="9">
+</CS>
+<BRS id="5" lWM="0" hWM="7" cur="2" int="4.137793576E9" sT="1306766379624" lST="1308825642131" lB="0" uB="0">
+</BRS>
+<BRS id="6" lWM="0" hWM="7" cur="2" int="4.137787046E9" sT="1306766379625" lST="1308825642131" lB="0" uB="0">
+</BRS>
+<RS id="7" sT="1306766379625" lST="1308825642131" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+<RS id="9" sT="1306766379625" lST="1308825642131" lWM="0" hWM="100" cur="0" int="65280.0"></RS>
+<TS id="12" sT="1306766379625" lST="1306780689611" ct="341" max="1885" min="2" sOS="4382683.0" tot="6513">
+</TS>
+<TS id="13" sT="1306766379625" lST="1306766379645" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<Stats name="jdbc/PlantsByWebSphereDataSource" statType="connectionPoolModule" il="-2" type="COLLECTION">
+<CS id="1" sT="1306766379626" lST="1306780662184" ct="10">
+</CS>
+<CS id="2" sT="1306766379626" lST="1306782462209" ct="9">
+</CS>
+<BRS id="5" lWM="0" hWM="7" cur="1" int="2.080086249E9" sT="1306766379626" lST="1308825642131" lB="0" uB="10">
+</BRS>
+<BRS id="6" lWM="0" hWM="7" cur="1" int="2.080080496E9" sT="1306766379626" lST="1308825642131" lB="0" uB="10">
+</BRS>
+<RS id="7" sT="1306766379626" lST="1308825642131" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+<RS id="9" sT="1306766379626" lST="1308825642131" lWM="30" hWM="100" cur="0" int="57530.0"></RS>
+<TS id="12" sT="1306766379626" lST="1306780689611" ct="337" max="1885" min="2" sOS="4125424.0" tot="5738">
+</TS>
+<TS id="13" sT="1306766379626" lST="1306766379626" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+</Stats>
+<Stats name="jdbc/PlantsByWebSphereDataSourceNONJTA" statType="connectionPoolModule" il="-2" type="COLLECTION">
+<CS id="1" sT="1306766379645" lST="1306767934826" ct="1">
+</CS>
+<CS id="2" sT="1306766379645" lST="1306766379645" ct="0">
+</CS>
+<BRS id="5" lWM="0" hWM="1" cur="1" int="2.057707305E9" sT="1306766379645" lST="1308825642131" lB="0" uB="10">
+</BRS>
+<BRS id="6" lWM="0" hWM="1" cur="1" int="2.05770653E9" sT="1306766379645" lST="1308825642131" lB="0" uB="10">
+</BRS>
+<RS id="7" sT="1306766379645" lST="1308825642131" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+<RS id="9" sT="1306766379645" lST="1308825642131" lWM="90" hWM="100" cur="0" int="7750.0"></RS>
+<TS id="12" sT="1306766379645" lST="1306767936089" ct="4" max="455" min="7" sOS="257259.0" tot="775">
+</TS>
+<TS id="13" sT="1306766379645" lST="1306766379645" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+</Stats>
+</Stats>
+</Stats>
+<Stats name="hamanagerModule" statType="hamanagerModule" il="-2" type="MODULE">
+<Stats name="HAManagerMBean" statType="hamanagerModule" il="-2" type="COLLECTION">
+</Stats>
+</Stats>
+<Stats name="jvmRuntimeModule" statType="jvmRuntimeModule#" il="-2" type="COLLECTION">
+<BRS id="1" lWM="51200" hWM="262144" cur="257204" int="4.27761991160861E14" sT="1306766366548" lST="1308825642132" lB="51200" uB="262144">
+</BRS>
+<CS id="3" sT="1306766366555" lST="1308825642132" ct="208195">
+</CS>
+<CS id="4" sT="1306766366556" lST="1308825642132" ct="2059275">
+</CS>
+<CS id="5" sT="1306766366556" lST="1308825642132" ct="13">
+</CS>
+</Stats>
+<Stats name="objectPoolModule" statType="objectPoolModule" il="-2" type="MODULE">
+<Stats name="ObjectPool_ibm.system.objectpool_com.ibm.ws.webcontainer.srt.SRTConnectionContextImpl" statType="objectPoolModule" il="-2" type="COLLECTION">
+</Stats>
+<Stats name="ObjectPool_ibm.system.objectpool_com.ibm.ws.webcontainer.srt.SRTConnectionContextImpl.class@3e023e02" statType="objectPoolModule" il="-2" type="COLLECTION">
+</Stats>
+</Stats>
+<Stats name="orbPerfModule" statType="orbPerfModule#" il="-2" type="MODULE">
+<Stats name="orbPerfModule.interceptors" statType="orbPerfModule#orbPerfModule.interceptors" il="-2" type="COLLECTION">
+<Stats name="PMIServerRequestInterceptor" statType="orbPerfModule#orbPerfModule.interceptors" il="-2" type="COLLECTION">
+</Stats>
+<Stats name="SecurityIORInterceptor" statType="orbPerfModule#orbPerfModule.interceptors" il="-2" type="COLLECTION">
+</Stats>
+<Stats name="TxIORInterceptor" statType="orbPerfModule#orbPerfModule.interceptors" il="-2" type="COLLECTION">
+</Stats>
+<Stats name="WLMClientRequestInterceptor" statType="orbPerfModule#orbPerfModule.interceptors" il="-2" type="COLLECTION">
+</Stats>
+<Stats name="WLMServerRequestInterceptor" statType="orbPerfModule#orbPerfModule.interceptors" il="-2" type="COLLECTION">
+</Stats>
+<Stats name="WLMTaggedComponentManager" statType="orbPerfModule#orbPerfModule.interceptors" il="-2" type="COLLECTION">
+</Stats>
+<Stats name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIClientRI" statType="orbPerfModule#orbPerfModule.interceptors" il="-2" type="COLLECTION">
+</Stats>
+<Stats name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIServerRI" statType="orbPerfModule#orbPerfModule.interceptors" il="-2" type="COLLECTION">
+</Stats>
+<Stats name="com.ibm.debug.DebugPortableInterceptor" statType="orbPerfModule#orbPerfModule.interceptors" il="-2" type="COLLECTION">
+</Stats>
+<Stats name="com.ibm.ejs.ras.RasContextSupport" statType="orbPerfModule#orbPerfModule.interceptors" il="-2" type="COLLECTION">
+</Stats>
+<Stats name="com.ibm.ws.Transaction.JTS.TxClientInterceptor" statType="orbPerfModule#orbPerfModule.interceptors" il="-2" type="COLLECTION">
+</Stats>
+<Stats name="com.ibm.ws.Transaction.JTS.TxServerInterceptor" statType="orbPerfModule#orbPerfModule.interceptors" il="-2" type="COLLECTION">
+</Stats>
+<Stats name="com.ibm.ws.activity.remote.cos.ActivityIORInterceptor" statType="orbPerfModule#orbPerfModule.interceptors" il="-2" type="COLLECTION">
+</Stats>
+<Stats name="com.ibm.ws.activity.remote.cos.ActivityServiceClientInterceptor" statType="orbPerfModule#orbPerfModule.interceptors" il="-2" type="COLLECTION">
+</Stats>
+<Stats name="com.ibm.ws.activity.remote.cos.ActivityServiceServerInterceptor" statType="orbPerfModule#orbPerfModule.interceptors" il="-2" type="COLLECTION">
+</Stats>
+<Stats name="com.ibm.ws.runtime.workloadcontroller.OrbWorkloadRequestInterceptor" statType="orbPerfModule#orbPerfModule.interceptors" il="-2" type="COLLECTION">
+</Stats>
+</Stats>
+</Stats>
+<Stats name="servletSessionsModule" statType="servletSessionsModule" il="-2" type="MODULE">
+<RS id="7" sT="1306766388260" lST="1308825642132" lWM="0" hWM="3" cur="1" int="1.89453946E8"></RS>
+<Stats name="DefaultApplication#DefaultWebApplication.war" statType="servletSessionsModule" il="-2" type="COLLECTION">
+<RS id="7" sT="1306766392696" lST="1308825642132" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+</Stats>
+<Stats name="PlantsByWebSphere#PlantsByWebSphere.war" statType="servletSessionsModule" il="-2" type="COLLECTION">
+<RS id="7" sT="1306766396051" lST="1308825642132" lWM="0" hWM="2" cur="0" int="9543028.0"></RS>
+</Stats>
+<Stats name="PlantsByWebSphere#PlantsGallery.war" statType="servletSessionsModule" il="-2" type="COLLECTION">
+<RS id="7" sT="1306766396186" lST="1308825642132" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+</Stats>
+<Stats name="SamplesGallery#Gallery.war" statType="servletSessionsModule" il="-2" type="COLLECTION">
+<RS id="7" sT="1306766391040" lST="1308825642132" lWM="0" hWM="1" cur="0" int="1838078.0"></RS>
+</Stats>
+<Stats name="SamplesGallery#GalleryMenu.war" statType="servletSessionsModule" il="-2" type="COLLECTION">
+<RS id="7" sT="1306766390904" lST="1308825642132" lWM="0" hWM="1" cur="0" int="1837871.0"></RS>
+</Stats>
+<Stats name="filetransferSecured#filetransfer.war" statType="servletSessionsModule" il="-2" type="COLLECTION">
+<RS id="7" sT="1306766388260" lST="1308825642132" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+</Stats>
+<Stats name="ibmasyncrsp#ibmasyncrsp.war" statType="servletSessionsModule" il="-2" type="COLLECTION">
+<RS id="7" sT="1306766389810" lST="1308825642132" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+</Stats>
+<Stats name="isclite#ISCAdminPortlet.war" statType="servletSessionsModule" il="-2" type="COLLECTION">
+<RS id="7" sT="1306766392372" lST="1308825642132" lWM="0" hWM="1" cur="0" int="4.309935E7"></RS>
+</Stats>
+<Stats name="isclite#WIMPortlet.war" statType="servletSessionsModule" il="-2" type="COLLECTION">
+<RS id="7" sT="1306766393148" lST="1308825642132" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+</Stats>
+<Stats name="isclite#adminredirector.war" statType="servletSessionsModule" il="-2" type="COLLECTION">
+<RS id="7" sT="1306766390113" lST="1308825642132" lWM="0" hWM="0" cur="0" int="0.0"></RS>
+</Stats>
+<Stats name="isclite#iehs.war" statType="servletSessionsModule" il="-2" type="COLLECTION">
+<RS id="7" sT="1306766390294" lST="1308825642132" lWM="0" hWM="1" cur="0" int="7637072.0"></RS>
+</Stats>
+<Stats name="isclite#isclite.war" statType="servletSessionsModule" il="-2" type="COLLECTION">
+<RS id="7" sT="1306766389225" lST="1308825642132" lWM="0" hWM="3" cur="1" int="7.6637968E7"></RS>
+</Stats>
+<Stats name="isclite#wasportlet.war" statType="servletSessionsModule" il="-2" type="COLLECTION">
+<RS id="7" sT="1306766393508" lST="1308825642132" lWM="0" hWM="1" cur="0" int="4.3123346E7"></RS>
+</Stats>
+<Stats name="ivtApp#ivt_app.war" statType="servletSessionsModule" il="-2" type="COLLECTION">
+<RS id="7" sT="1306766391629" lST="1308825642132" lWM="0" hWM="3" cur="0" int="5736947.0"></RS>
+</Stats>
+</Stats>
+<Stats name="systemModule" statType="systemModule" il="-2" type="MODULE">
+<CS id="1" sT="1306766366571" lST="1308825642132" ct="45">
+</CS>
+</Stats>
+<Stats name="threadPoolModule" statType="threadPoolModule" il="-2" type="MODULE">
+<BRS id="4" lWM="0" hWM="50" cur="18" int="3.5494964289E10" sT="1306766366376" lST="1308825642132" lB="0" uB="0">
+</BRS>
+<Stats name="Default" statType="threadPoolModule" il="-2" type="COLLECTION">
+<BRS id="4" lWM="20" hWM="20" cur="0" int="0.0" sT="1306766366379" lST="1308825642132" lB="20" uB="20">
+</BRS>
+</Stats>
+<Stats name="HAManager.thread.pool" statType="threadPoolModule" il="-2" type="COLLECTION">
+<BRS id="4" lWM="1" hWM="2" cur="2" int="4.118545893E9" sT="1306766366380" lST="1308825642132" lB="2" uB="2">
+</BRS>
+</Stats>
+<Stats name="MessageListenerThreadPool" statType="threadPoolModule" il="-2" type="COLLECTION">
+<BRS id="4" lWM="10" hWM="10" cur="0" int="0.0" sT="1306766366377" lST="1308825642132" lB="10" uB="50">
+</BRS>
+</Stats>
+<Stats name="ORB.thread.pool" statType="threadPoolModule" il="-2" type="COLLECTION">
+<BRS id="4" lWM="1" hWM="10" cur="2" int="3.42107881E9" sT="1306766366380" lST="1308825642132" lB="10" uB="50">
+</BRS>
+</Stats>
+<Stats name="SIBFAPInboundThreadPool" statType="threadPoolModule" il="-2" type="COLLECTION">
+<BRS id="4" lWM="4" hWM="4" cur="0" int="0.0" sT="1306766366381" lST="1308825642132" lB="4" uB="50">
+</BRS>
+</Stats>
+<Stats name="SIBFAPThreadPool" statType="threadPoolModule" il="-2" type="COLLECTION">
+<BRS id="4" lWM="4" hWM="4" cur="0" int="0.0" sT="1306766366384" lST="1308825642132" lB="4" uB="50">
+</BRS>
+</Stats>
+<Stats name="SoapConnectorThreadPool" statType="threadPoolModule" il="-2" type="COLLECTION">
+<BRS id="4" lWM="1" hWM="2" cur="2" int="3.250688019E9" sT="1306766377593" lST="1308825642132" lB="1" uB="5">
+</BRS>
+</Stats>
+<Stats name="TCPChannel.DCS" statType="threadPoolModule" il="-2" type="COLLECTION">
+<BRS id="4" lWM="5" hWM="5" cur="0" int="0.0" sT="1306766366382" lST="1308825642132" lB="5" uB="20">
+</BRS>
+</Stats>
+<Stats name="WMQJCAResourceAdapter" statType="threadPoolModule" il="-2" type="COLLECTION">
+<BRS id="4" lWM="5" hWM="5" cur="0" int="0.0" sT="1306766379197" lST="1308825642132" lB="5" uB="25">
+</BRS>
+</Stats>
+<Stats name="WebContainer" statType="threadPoolModule" il="-2" type="COLLECTION">
+<BRS id="4" lWM="1" hWM="50" cur="12" int="2.4704633765E10" sT="1306766366383" lST="1308825642132" lB="50" uB="50">
+</BRS>
+</Stats>
+</Stats>
+<Stats name="transactionModule" statType="transactionModule" il="-2" type="MODULE">
+<CS id="4" sT="1306766378168" lST="1308825477095" ct="0">
+</CS>
+<CS id="14" sT="1306766378169" lST="1308825477095" ct="1236">
+</CS>
+<CS id="16" sT="1306766378169" lST="1306766378169" ct="0">
+</CS>
+</Stats>
+<Stats name="webAppModule" statType="com.ibm.ws.wswebcontainer.stats.webAppModuleStats,com.ibm.ws.wswebcontainer.stats.servletStats,com.ibm.ws.portletcontainer.pmi.xml.portletAppModule,com.ibm.ws.portletcontainer.pmi.xml.portletModule" il="-2" type="MODULE">
+<Stats name="DefaultApplication#DefaultWebApplication.war" statType="com.ibm.ws.wswebcontainer.stats.webAppModuleStats" il="-2" type="COLLECTION">
+<Stats name="webAppModule.servlets" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="MODULE">
+<CS id="11" sT="1306766392696" lST="1306766392776" ct="0">
+</CS>
+<TS id="13" sT="1306766392696" lST="1306766392776" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<Stats name="Hello Pervasive Servlet" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766392776" lST="1306766392776" ct="0">
+</CS>
+<TS id="13" sT="1306766392776" lST="1306766392776" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="Hit Count Servlet" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766392744" lST="1306766392744" ct="0">
+</CS>
+<TS id="13" sT="1306766392744" lST="1306766392744" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="Snoop Servlet" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766392728" lST="1306766392728" ct="0">
+</CS>
+<TS id="13" sT="1306766392728" lST="1306766392728" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+</Stats>
+</Stats>
+<Stats name="PlantsByWebSphere#PlantsByWebSphere.war" statType="com.ibm.ws.wswebcontainer.stats.webAppModuleStats" il="-2" type="COLLECTION">
+<Stats name="webAppModule.servlets" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="MODULE">
+<CS id="11" sT="1306766396052" lST="1306780689606" ct="379">
+</CS>
+<TS id="13" sT="1306766396052" lST="1306780689612" ct="380" max="2128" min="1" sOS="5781477.0" tot="9457">
+</TS>
+<Stats name="ShoppingServlet" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767934673" lST="1306780689463" ct="41">
+</CS>
+<TS id="13" sT="1306767934673" lST="1306780689494" ct="41" max="2128" min="9" sOS="4825554.0" tot="4194">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/shopping.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767936798" lST="1306780689492" ct="30">
+</CS>
+<TS id="13" sT="1306767936798" lST="1306780689494" ct="30" max="5" min="1" sOS="232.0" tot="78">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="ImageServlet" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767936818" lST="1306780689606" ct="295">
+</CS>
+<TS id="13" sT="1306767936818" lST="1306780689612" ct="296" max="364" min="3" sOS="955399.0" tot="5143">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/product.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306768057444" lST="1306776148894" ct="9">
+</CS>
+<TS id="13" sT="1306768057444" lST="1306776148897" ct="9" max="3" min="2" sOS="61.0" tot="23">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/cart.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306768061491" lST="1306768061495" ct="1">
+</CS>
+<TS id="13" sT="1306768061491" lST="1306768061510" ct="1" max="15" min="15" sOS="225.0" tot="15">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/login.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306768066885" lST="1306768066889" ct="1">
+</CS>
+<TS id="13" sT="1306768066885" lST="1306768066891" ct="1" max="2" min="2" sOS="4.0" tot="2">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/help.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306768084034" lST="1306780679276" ct="2">
+</CS>
+<TS id="13" sT="1306768084034" lST="1306780679277" ct="2" max="1" min="1" sOS="2.0" tot="2">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+</Stats>
+</Stats>
+<Stats name="PlantsByWebSphere#PlantsGallery.war" statType="com.ibm.ws.wswebcontainer.stats.webAppModuleStats" il="-2" type="COLLECTION">
+<Stats name="webAppModule.servlets" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="MODULE">
+<CS id="11" sT="1306766396187" lST="1306766396187" ct="0">
+</CS>
+<TS id="13" sT="1306766396187" lST="1306766396187" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+</Stats>
+</Stats>
+<Stats name="SamplesGallery#Gallery.war" statType="com.ibm.ws.wswebcontainer.stats.webAppModuleStats" il="-2" type="COLLECTION">
+<Stats name="webAppModule.servlets" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="MODULE">
+<CS id="11" sT="1306766391041" lST="1306767881021" ct="1">
+</CS>
+<TS id="13" sT="1306766391041" lST="1306767881024" ct="1" max="3" min="3" sOS="9.0" tot="3">
+</TS>
+<Stats name="/index.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767881014" lST="1306767881021" ct="1">
+</CS>
+<TS id="13" sT="1306767881014" lST="1306767881024" ct="1" max="3" min="3" sOS="9.0" tot="3">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+</Stats>
+</Stats>
+<Stats name="SamplesGallery#GalleryMenu.war" statType="com.ibm.ws.wswebcontainer.stats.webAppModuleStats" il="-2" type="COLLECTION">
+<Stats name="webAppModule.servlets" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="MODULE">
+<CS id="11" sT="1306766390904" lST="1306767881085" ct="1">
+</CS>
+<TS id="13" sT="1306766390904" lST="1306767881519" ct="1" max="434" min="434" sOS="188356.0" tot="434">
+</TS>
+<Stats name="GalleryMenu" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767881079" lST="1306767881085" ct="1">
+</CS>
+<TS id="13" sT="1306767881079" lST="1306767881519" ct="1" max="434" min="434" sOS="188356.0" tot="434">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+</Stats>
+</Stats>
+<Stats name="filetransferSecured#filetransfer.war" statType="com.ibm.ws.wswebcontainer.stats.webAppModuleStats" il="-2" type="COLLECTION">
+<Stats name="webAppModule.servlets" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="MODULE">
+<CS id="11" sT="1306766388271" lST="1306766388544" ct="0">
+</CS>
+<TS id="13" sT="1306766388271" lST="1306766388544" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<Stats name="transfer" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766388543" lST="1306766388543" ct="0">
+</CS>
+<TS id="13" sT="1306766388544" lST="1306766388544" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+</Stats>
+</Stats>
+<Stats name="ibmasyncrsp#ibmasyncrsp.war" statType="com.ibm.ws.wswebcontainer.stats.webAppModuleStats" il="-2" type="COLLECTION">
+<Stats name="webAppModule.servlets" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="MODULE">
+<CS id="11" sT="1306766389811" lST="1306766390027" ct="0">
+</CS>
+<TS id="13" sT="1306766389811" lST="1306766390027" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<Stats name="rspservlet" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766390027" lST="1306766390027" ct="0">
+</CS>
+<TS id="13" sT="1306766390027" lST="1306766390027" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+</Stats>
+</Stats>
+<Stats name="isclite#ISCAdminPortlet.war" statType="com.ibm.ws.wswebcontainer.stats.webAppModuleStats" il="-2" type="COLLECTION">
+<Stats name="portletAppModule" statType="com.ibm.ws.portletcontainer.pmi.xml.portletAppModule" il="-2" type="MODULE">
+<Stats name="Details" statType="com.ibm.ws.portletcontainer.pmi.xml.portletAppModule" il="-2" type="COLLECTION">
+</Stats>
+</Stats>
+<Stats name="portletModule" statType="com.ibm.ws.portletcontainer.pmi.xml.portletModule" il="-2" type="MODULE">
+<Stats name="ConsoleIdentityPortlet" statType="com.ibm.ws.portletcontainer.pmi.xml.portletModule" il="-2" type="COLLECTION">
+</Stats>
+<Stats name="ISCProductDetails" statType="com.ibm.ws.portletcontainer.pmi.xml.portletModule" il="-2" type="COLLECTION">
+</Stats>
+<Stats name="PortletPref" statType="com.ibm.ws.portletcontainer.pmi.xml.portletModule" il="-2" type="COLLECTION">
+</Stats>
+<Stats name="WelcomePortlet" statType="com.ibm.ws.portletcontainer.pmi.xml.portletModule" il="-2" type="COLLECTION">
+</Stats>
+</Stats>
+<Stats name="webAppModule.servlets" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="MODULE">
+<CS id="11" sT="1306766392373" lST="1308823750205" ct="53">
+</CS>
+<TS id="13" sT="1306766392373" lST="1308823750208" ct="53" max="106" min="3" sOS="17363.0" tot="577">
+</TS>
+<Stats name="/about.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766836331" lST="1308823750205" ct="26">
+</CS>
+<TS id="13" sT="1306766836331" lST="1308823750208" ct="26" max="31" min="3" sOS="3867.0" tot="253">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/welcome.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766836162" lST="1308823750195" ct="27">
+</CS>
+<TS id="13" sT="1306766836162" lST="1308823750199" ct="27" max="106" min="4" sOS="13496.0" tot="324">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+</Stats>
+</Stats>
+<Stats name="isclite#WIMPortlet.war" statType="com.ibm.ws.wswebcontainer.stats.webAppModuleStats" il="-2" type="COLLECTION">
+<Stats name="portletAppModule" statType="com.ibm.ws.portletcontainer.pmi.xml.portletAppModule" il="-2" type="MODULE">
+<Stats name="Details" statType="com.ibm.ws.portletcontainer.pmi.xml.portletAppModule" il="-2" type="COLLECTION">
+</Stats>
+</Stats>
+<Stats name="portletModule" statType="com.ibm.ws.portletcontainer.pmi.xml.portletModule" il="-2" type="MODULE">
+<Stats name="WIM Group Management" statType="com.ibm.ws.portletcontainer.pmi.xml.portletModule" il="-2" type="COLLECTION">
+</Stats>
+<Stats name="WIM User Management" statType="com.ibm.ws.portletcontainer.pmi.xml.portletModule" il="-2" type="COLLECTION">
+</Stats>
+</Stats>
+<Stats name="webAppModule.servlets" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="MODULE">
+<CS id="11" sT="1306766393149" lST="1306766393149" ct="0">
+</CS>
+<TS id="13" sT="1306766393149" lST="1306766393149" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+</Stats>
+</Stats>
+<Stats name="isclite#adminredirector.war" statType="com.ibm.ws.wswebcontainer.stats.webAppModuleStats" il="-2" type="COLLECTION">
+<Stats name="webAppModule.servlets" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="MODULE">
+<CS id="11" sT="1306766390115" lST="1307630843207" ct="1">
+</CS>
+<TS id="13" sT="1306766390115" lST="1307630843207" ct="1" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<Stats name="RedirectServlet" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307630843205" lST="1307630843207" ct="1">
+</CS>
+<TS id="13" sT="1307630843205" lST="1307630843207" ct="1" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+</Stats>
+</Stats>
+<Stats name="isclite#iehs.war" statType="com.ibm.ws.wswebcontainer.stats.webAppModuleStats" il="-2" type="COLLECTION">
+<Stats name="webAppModule.servlets" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="MODULE">
+<CS id="11" sT="1306766390295" lST="1307527925470" ct="242">
+</CS>
+<TS id="13" sT="1306766390295" lST="1307527925472" ct="242" max="967" min="0" sOS="970979.0" tot="1987">
+</TS>
+<Stats name="/index.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767314218" lST="1307527900983" ct="3">
+</CS>
+<TS id="13" sT="1306767314218" lST="1307527900984" ct="3" max="967" min="1" sOS="935094.0" tot="970">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="InitServlet" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767314231" lST="1307527925470" ct="121">
+</CS>
+<TS id="13" sT="1306767314231" lST="1307527925470" ct="121" max="1" min="0" sOS="4.0" tot="4">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/advanced/index.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767315164" lST="1307527900984" ct="3">
+</CS>
+<TS id="13" sT="1306767315164" lST="1307527900984" ct="3" max="22" min="0" sOS="485.0" tot="23">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/advanced/livehelp_js.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767315184" lST="1307527900984" ct="3">
+</CS>
+<TS id="13" sT="1306767315184" lST="1307527900984" ct="3" max="1" min="0" sOS="1.0" tot="1">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/advanced/search.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767315241" lST="1307527901044" ct="3">
+</CS>
+<TS id="13" sT="1306767315241" lST="1307527901049" ct="3" max="45" min="5" sOS="2246.0" tot="64">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/advanced/searchScoped.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767315260" lST="1307527901044" ct="3">
+</CS>
+<TS id="13" sT="1306767315260" lST="1307527901049" ct="3" max="25" min="5" sOS="846.0" tot="44">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/advanced/help.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767315263" lST="1307527901085" ct="3">
+</CS>
+<TS id="13" sT="1306767315263" lST="1307527901085" ct="3" max="7" min="0" sOS="50.0" tot="8">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/advanced/nav.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767315352" lST="1307527901150" ct="3">
+</CS>
+<TS id="13" sT="1306767315352" lST="1307527901151" ct="3" max="3" min="0" sOS="10.0" tot="4">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/advanced/content.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767315353" lST="1307527901168" ct="3">
+</CS>
+<TS id="13" sT="1306767315353" lST="1307527901168" ct="3" max="122" min="0" sOS="14885.0" tot="123">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/advanced/views.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767315386" lST="1307527901208" ct="3">
+</CS>
+<TS id="13" sT="1306767315386" lST="1307527901209" ct="3" max="5" min="1" sOS="27.0" tot="7">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/advanced/tabs.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767315406" lST="1307527901221" ct="3">
+</CS>
+<TS id="13" sT="1306767315406" lST="1307527901222" ct="3" max="10" min="1" sOS="102.0" tot="12">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/advanced/view.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767315429" lST="1307527901443" ct="6">
+</CS>
+<TS id="13" sT="1306767315429" lST="1307527901444" ct="6" max="4" min="0" sOS="22.0" tot="8">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/advanced/searchToolbar.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767315564" lST="1307527901585" ct="3">
+</CS>
+<TS id="13" sT="1306767315564" lST="1307527901586" ct="3" max="50" min="1" sOS="2505.0" tot="53">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/advanced/searchView.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767315564" lST="1307527901588" ct="3">
+</CS>
+<TS id="13" sT="1306767315564" lST="1307527901589" ct="3" max="19" min="0" sOS="362.0" tot="20">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/advanced/contentToolbar.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767315567" lST="1307527901249" ct="3">
+</CS>
+<TS id="13" sT="1306767315568" lST="1307527901251" ct="3" max="47" min="2" sOS="2229.0" tot="53">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/advanced/tocToolbar.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767315568" lST="1307527901558" ct="3">
+</CS>
+<TS id="13" sT="1306767315568" lST="1307527901560" ct="3" max="48" min="2" sOS="2312.0" tot="52">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/advanced/tocView.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767315577" lST="1307527918688" ct="8">
+</CS>
+<TS id="13" sT="1306767315577" lST="1307527918723" ct="8" max="35" min="4" sOS="3953.0" tot="149">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="content" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767315580" lST="1307527925470" ct="56">
+</CS>
+<TS id="13" sT="1306767315580" lST="1307527925472" ct="56" max="33" min="0" sOS="5436.0" tot="352">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/advanced/toolbar.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767315601" lST="1307527901585" ct="9">
+</CS>
+<TS id="13" sT="1306767315601" lST="1307527901586" ct="9" max="13" min="0" sOS="410.0" tot="40">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+</Stats>
+</Stats>
+<Stats name="isclite#isclite.war" statType="com.ibm.ws.wswebcontainer.stats.webAppModuleStats" il="-2" type="COLLECTION">
+<Stats name="webAppModule.servlets" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="MODULE">
+<CS id="11" sT="1306766389229" lST="1308823811525" ct="6052">
+</CS>
+<TS id="13" sT="1306766389229" lST="1308823811861" ct="6051" max="12101" min="0" sOS="2.0763071792E10" tot="3566150">
+</TS>
+<Stats name="/com.ibm.ws.console.environment/about.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766842612" lST="1307443462581" ct="5">
+</CS>
+<TS id="13" sT="1306766842612" lST="1307443462586" ct="5" max="32" min="5" sOS="1135.0" tot="53">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.perf.pmi/pmiConfig60.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766977813" lST="1308823762084" ct="31">
+</CS>
+<TS id="13" sT="1306766977813" lST="1308823762085" ct="31" max="4" min="0" sOS="77.0" tot="41">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.pmirm/filterSummary.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766946005" lST="1308152122501" ct="6">
+</CS>
+<TS id="13" sT="1306766946005" lST="1308152122501" ct="6" max="1" min="0" sOS="1.0" tot="1">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.pmirm/instrumentComponents.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766945735" lST="1308152122301" ct="6">
+</CS>
+<TS id="13" sT="1306766945735" lST="1308152122302" ct="6" max="3" min="0" sOS="16.0" tot="8">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.pmirm/rmDestination.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766945751" lST="1308152122302" ct="6">
+</CS>
+<TS id="13" sT="1306766945751" lST="1308152122303" ct="6" max="2" min="0" sOS="7.0" tot="5">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.probdetermination/blank.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766975108" lST="1308823759389" ct="11">
+</CS>
+<TS id="13" sT="1306766975108" lST="1308823759389" ct="11" max="1" min="0" sOS="1.0" tot="1">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.servermanagement/AppServerConfigGenPropLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766921583" lST="1308152177533" ct="14">
+</CS>
+<TS id="13" sT="1306766921583" lST="1308152177639" ct="14" max="364" min="99" sOS="538339.0" tot="2483">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.servermanagement/ClassLoadingPolicyLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766921866" lST="1308152177638" ct="14">
+</CS>
+<TS id="13" sT="1306766921866" lST="1308152177639" ct="14" max="37" min="1" sOS="1431.0" tot="59">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.servermanagement/addPropLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766921893" lST="1308152177643" ct="16">
+</CS>
+<TS id="13" sT="1306766921893" lST="1308152177946" ct="16" max="653" min="239" sOS="3249363.0" tot="6829">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.servermanagement/collectionTableLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766912774" lST="1308823759269" ct="25">
+</CS>
+<TS id="13" sT="1306766912774" lST="1308823759390" ct="25" max="1440" min="108" sOS="7705593.0" tot="10855">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.servermanagement/runtimeLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766930718" lST="1307470158415" ct="2">
+</CS>
+<TS id="13" sT="1306766930718" lST="1307470158421" ct="2" max="10" min="6" sOS="136.0" tot="16">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.servermanagement/serverindex/NamedEndPointSummary.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766922501" lST="1308152177927" ct="14">
+</CS>
+<TS id="13" sT="1306766922501" lST="1308152177927" ct="14" max="7" min="0" sOS="67.0" tot="19">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.servermanagement/tabsLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766920666" lST="1308823761452" ct="47">
+</CS>
+<TS id="13" sT="1306766920666" lST="1308823762318" ct="47" max="1873" min="287" sOS="3.4388069E7" tot="36999">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.servermanagement/transactionservice/pagingLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766913908" lST="1308823810303" ct="93">
+</CS>
+<TS id="13" sT="1306766913908" lST="1308823810303" ct="93" max="4" min="0" sOS="56.0" tot="32">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/serversCollectionLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766994555" lST="1308823767108" ct="12">
+</CS>
+<TS id="13" sT="1306766994555" lST="1308823767200" ct="12" max="290" min="92" sOS="318326.0" tot="1788">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/xmlRegisterData.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766994945" lST="1308823767262" ct="13">
+</CS>
+<TS id="13" sT="1306766994945" lST="1308823767262" ct="13" max="1" min="0" sOS="2.0" tot="2">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/error.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766911733" lST="1306766911737" ct="1">
+</CS>
+<TS id="13" sT="1306766911733" lST="1306766911804" ct="1" max="67" min="67" sOS="4489.0" tot="67">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/html/isclite/ColumnContainer.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766835748" lST="1308823750192" ct="27">
+</CS>
+<TS id="13" sT="1306766835748" lST="1308823750209" ct="27" max="597" min="16" sOS="391823.0" tot="1465">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/html/isclite/Content.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766835779" lST="1308823750201" ct="59">
+</CS>
+<TS id="13" sT="1306766835779" lST="1308823750209" ct="59" max="496" min="5" sOS="266486.0" tot="1404">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/html/isclite/RowContainer.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766835731" lST="1308823750192" ct="37">
+</CS>
+<TS id="13" sT="1306766835731" lST="1308823750209" ct="37" max="617" min="6" sOS="419646.0" tot="1618">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/index.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766830496" lST="1308823748332" ct="23">
+</CS>
+<TS id="13" sT="1306766830496" lST="1308823748332" ct="23" max="2" min="0" sOS="9.0" tot="7">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/logon.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766820684" lST="1308823744060" ct="41">
+</CS>
+<TS id="13" sT="1306766820684" lST="1308823744062" ct="41" max="90" min="0" sOS="14054.0" tot="366">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/content.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766841832" lST="1307443462413" ct="5">
+</CS>
+<TS id="13" sT="1306766841832" lST="1307443462593" ct="5" max="838" min="133" sOS="879925.0" tot="1651">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/isclite/tiles/banner.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766877738" lST="1308823748564" ct="11">
+</CS>
+<TS id="13" sT="1306766877738" lST="1308823748565" ct="11" max="1" min="0" sOS="8.0" tot="8">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/isclite/tiles/bannerframe.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766835172" lST="1308823750151" ct="25">
+</CS>
+<TS id="13" sT="1306766835172" lST="1308823750154" ct="25" max="24" min="2" sOS="1597.0" tot="173">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/isclite/tiles/content.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766835695" lST="1308823750190" ct="32">
+</CS>
+<TS id="13" sT="1306766835695" lST="1308823750209" ct="32" max="654" min="9" sOS="473664.0" tot="1710">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/isclite/tiles/dynamic_css.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766911793" lST="1306766911798" ct="1">
+</CS>
+<TS id="13" sT="1306766911794" lST="1306766911800" ct="1" max="2" min="2" sOS="4.0" tot="2">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/isclite/tiles/footer.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766835632" lST="1308823750264" ct="69">
+</CS>
+<TS id="13" sT="1306766835632" lST="1308823750264" ct="69" max="1" min="0" sOS="4.0" tot="4">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/isclite/tiles/frameset.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766835090" lST="1308823750079" ct="25">
+</CS>
+<TS id="13" sT="1306766835091" lST="1308823750080" ct="25" max="47" min="1" sOS="2457.0" tot="113">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/isclite/tiles/head.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766835135" lST="1308823750241" ct="119">
+</CS>
+<TS id="13" sT="1306766835135" lST="1308823750241" ct="119" max="7" min="0" sOS="214.0" tot="120">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/isclite/tiles/iscnavigatorLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766835209" lST="1308823750244" ct="26">
+</CS>
+<TS id="13" sT="1306766835209" lST="1308823750263" ct="26" max="410" min="19" sOS="502330.0" tot="2062">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/isclite/tiles/login.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766877725" lST="1308823748563" ct="11">
+</CS>
+<TS id="13" sT="1306766877725" lST="1308823748565" ct="11" max="96" min="2" sOS="11419.0" tot="183">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/isclite/tiles/loginConflict.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766877754" lST="1306766877757" ct="1">
+</CS>
+<TS id="13" sT="1306766877754" lST="1306766877771" ct="1" max="14" min="14" sOS="196.0" tot="14">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/isclite/tiles/master.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766835180" lST="1308823750239" ct="69">
+</CS>
+<TS id="13" sT="1306766835180" lST="1308823750264" ct="69" max="675" min="7" sOS="1105068.0" tot="4502">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/isclite/tiles/menubar.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766835655" lST="1308823750154" ct="25">
+</CS>
+<TS id="13" sT="1306766835655" lST="1308823750154" ct="25" max="3" min="0" sOS="37.0" tot="25">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/javascriptToSession.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766913603" lST="1308823767279" ct="144">
+</CS>
+<TS id="13" sT="1306766913603" lST="1308823767279" ct="144" max="4" min="0" sOS="53.0" tot="41">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/PreferencesLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766913478" lST="1308823767108" ct="66">
+</CS>
+<TS id="13" sT="1306766913478" lST="1308823767109" ct="66" max="11" min="0" sOS="376.0" tot="102">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/addPropLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766945775" lST="1308823762096" ct="40">
+</CS>
+<TS id="13" sT="1306766945775" lST="1308823762318" ct="40" max="706" min="176" sOS="4073584.0" tot="11316">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/browser_detection.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766842527" lST="1308823811286" ct="310">
+</CS>
+<TS id="13" sT="1306766842527" lST="1308823811286" ct="310" max="29" min="0" sOS="929.0" tot="115">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/buttonLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766913512" lST="1308823767110" ct="129">
+</CS>
+<TS id="13" sT="1306766913512" lST="1308823767199" ct="129" max="625" min="86" sOS="5410876.0" tot="21492">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/checkBoxLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766921805" lST="1308823762084" ct="181">
+</CS>
+<TS id="13" sT="1306766921805" lST="1308823762084" ct="181" max="45" min="0" sOS="2152.0" tot="122">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/configGenPropLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766945422" lST="1308823761962" ct="43">
+</CS>
+<TS id="13" sT="1306766945422" lST="1308823762091" ct="43" max="363" min="87" sOS="1235628.0" tot="6438">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/configTabLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766920940" lST="1308823761564" ct="73">
+</CS>
+<TS id="13" sT="1306766920940" lST="1308823762318" ct="73" max="1597" min="194" sOS="3.4827296E7" tot="45384">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/configboxLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766920613" lST="1308823761440" ct="84">
+</CS>
+<TS id="13" sT="1306766920613" lST="1308823762322" ct="84" max="1942" min="25" sOS="5.451815E7" tot="59284">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/contentLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766911628" lST="1308823767082" ct="71">
+</CS>
+<TS id="13" sT="1306766911628" lST="1308823767210" ct="71" max="2442" min="88" sOS="2.1462322E7" tot="29850">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/content_accessibility.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766842541" lST="1308823811287" ct="209">
+</CS>
+<TS id="13" sT="1306766842541" lST="1308823811287" ct="209" max="1" min="0" sOS="20.0" tot="20">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/customLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766921851" lST="1308823762084" ct="57">
+</CS>
+<TS id="13" sT="1306766921851" lST="1308823762085" ct="57" max="38" min="0" sOS="2652.0" tot="186">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/descLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766911800" lST="1308823767084" ct="71">
+</CS>
+<TS id="13" sT="1306766911800" lST="1308823767085" ct="71" max="815" min="1" sOS="682563.0" tot="1489">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/detailTitleLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766920640" lST="1308823768789" ct="93">
+</CS>
+<TS id="13" sT="1306766920640" lST="1308823768790" ct="93" max="118" min="1" sOS="23283.0" tot="647">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/homePageLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766841861" lST="1307443462418" ct="5">
+</CS>
+<TS id="13" sT="1306766841861" lST="1307443462593" ct="5" max="809" min="131" sOS="811837.0" tot="1579">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/portletToolbar.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766911921" lST="1308823768790" ct="164">
+</CS>
+<TS id="13" sT="1306766911921" lST="1308823768790" ct="164" max="696" min="0" sOS="490742.0" tot="1042">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/quicksearchLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766912673" lST="1308823809828" ct="93">
+</CS>
+<TS id="13" sT="1306766912673" lST="1308823809828" ct="93" max="46" min="0" sOS="10408.0" tot="412">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/runtimeGenPropLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766981094" lST="1308152097450" ct="11">
+</CS>
+<TS id="13" sT="1306766981094" lST="1308152097776" ct="11" max="809" min="98" sOS="875991.0" tot="2145">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/slotLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766842587" lST="1307443462593" ct="20">
+</CS>
+<TS id="13" sT="1306766842587" lST="1307443462593" ct="20" max="48" min="0" sOS="2458.0" tot="78">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/submitLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766921829" lST="1308152177639" ct="53">
+</CS>
+<TS id="13" sT="1306766921829" lST="1308152177639" ct="53" max="7" min="0" sOS="70.0" tot="28">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/tabsLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766945161" lST="1308152121826" ct="23">
+</CS>
+<TS id="13" sT="1306766945161" lST="1308152122501" ct="23" max="1410" min="353" sOS="1.629005E7" tot="18226">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/textFieldLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766921778" lST="1308152177636" ct="44">
+</CS>
+<TS id="13" sT="1306766921778" lST="1308152177636" ct="44" max="54" min="0" sOS="2961.0" tot="79">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/twoColumnLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766842564" lST="1307443462574" ct="5">
+</CS>
+<TS id="13" sT="1306766842564" lST="1307443462593" ct="5" max="99" min="11" sOS="11588.0" tot="180">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/vboxLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766912651" lST="1308823811287" ct="111">
+</CS>
+<TS id="13" sT="1306766912651" lST="1308823811289" ct="111" max="1491" min="1" sOS="1.734172E7" tot="33298">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="ConsoleCSS" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766842554" lST="1308739038210" ct="10">
+</CS>
+<TS id="13" sT="1306766842554" lST="1308739038215" ct="10" max="54" min="4" sOS="3462.0" tot="116">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="EventInitializer" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766389658" lST="1306766389658" ct="0">
+</CS>
+<TS id="13" sT="1306766389658" lST="1306766389658" ct="0" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="FilterProxyServlet" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766828593" lST="1308823748332" ct="23">
+</CS>
+<TS id="13" sT="1306766828593" lST="1308823748332" ct="23" max="1920" min="0" sOS="3686793.0" tot="1971">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="action" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766828650" lST="1308823811525" ct="1786">
+</CS>
+<TS id="13" sT="1306766828650" lST="1308823811861" ct="1785" max="12101" min="0" sOS="2.0518401879E10" tot="3206991">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/verticalLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766997263" lST="1308823768783" ct="9">
+</CS>
+<TS id="13" sT="1306766997263" lST="1308823768791" ct="9" max="24" min="3" sOS="1244.0" tot="94">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/tpvDetail.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766997286" lST="1308823768791" ct="9">
+</CS>
+<TS id="13" sT="1306766997286" lST="1308823768791" ct="9" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/tpvNavTree.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766997411" lST="1308823797042" ct="81">
+</CS>
+<TS id="13" sT="1306766997411" lST="1308823797092" ct="81" max="3552" min="25" sOS="2.2837581E7" tot="19147">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/tiles/contentLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766997431" lST="1308823811285" ct="40">
+</CS>
+<TS id="13" sT="1306766997431" lST="1308823811289" ct="40" max="860" min="3" sOS="2376385.0" tot="6647">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/tiles/metaRefreshTile.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766997460" lST="1308823811286" ct="36">
+</CS>
+<TS id="13" sT="1306766997460" lST="1308823811286" ct="36" max="24" min="0" sOS="582.0" tot="28">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/tiles/browserStatusTile.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766997500" lST="1308823811287" ct="40">
+</CS>
+<TS id="13" sT="1306766997501" lST="1308823811287" ct="40" max="1" min="0" sOS="1.0" tot="1">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/tiles/titleTile.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766997521" lST="1308823811287" ct="29">
+</CS>
+<TS id="13" sT="1306766997521" lST="1308823811287" ct="29" max="3" min="0" sOS="27.0" tot="19">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/tiles/messageFormTile.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766997550" lST="1308823811288" ct="36">
+</CS>
+<TS id="13" sT="1306766997550" lST="1308823811288" ct="36" max="25" min="0" sOS="678.0" tot="48">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/tiles/tpvLogSummaryControls.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766997590" lST="1308823811288" ct="29">
+</CS>
+<TS id="13" sT="1306766997590" lST="1308823811288" ct="29" max="3" min="0" sOS="15.0" tot="9">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/genericCollectionLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766997649" lST="1308823809829" ct="23">
+</CS>
+<TS id="13" sT="1306766997649" lST="1308823810302" ct="23" max="473" min="88" sOS="1295548.0" tot="4702">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/tiles/tpaHelpTile.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767031077" lST="1307989258701" ct="4">
+</CS>
+<TS id="13" sT="1306767031077" lST="1307989258701" ct="4" max="1" min="0" sOS="1.0" tot="1">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/twoColumnLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767031092" lST="1307989258702" ct="4">
+</CS>
+<TS id="13" sT="1306767031092" lST="1307989258709" ct="4" max="71" min="7" sOS="5203.0" tot="93">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/genericTableLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767031121" lST="1307989306735" ct="9">
+</CS>
+<TS id="13" sT="1306767031121" lST="1307989306735" ct="9" max="29" min="0" sOS="1219.0" tot="53">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/tpaGraphs.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767031163" lST="1307989258709" ct="4">
+</CS>
+<TS id="13" sT="1306767031163" lST="1307989258709" ct="4" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/tpaCollectionLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767031295" lST="1307989258732" ct="4">
+</CS>
+<TS id="13" sT="1306767031295" lST="1307989258840" ct="4" max="598" min="102" sOS="394801.0" tot="931">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/tiles/contextScopeTile.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767097727" lST="1306767104595" ct="3">
+</CS>
+<TS id="13" sT="1306767097727" lST="1306767104607" ct="3" max="41" min="11" sOS="1998.0" tot="66">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/collectionTableLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767097836" lST="1307705465257" ct="21">
+</CS>
+<TS id="13" sT="1306767097836" lST="1307705465709" ct="21" max="539" min="180" sOS="2398172.0" tot="6560">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/tiles/tpvLogControls.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767133442" lST="1308741341071" ct="7">
+</CS>
+<TS id="13" sT="1306767133442" lST="1308741341071" ct="7" max="2" min="0" sOS="4.0" tot="2">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/tiles/dataViewHelpTile.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767133465" lST="1308741341072" ct="7">
+</CS>
+<TS id="13" sT="1306767133465" lST="1308741341073" ct="7" max="1" min="0" sOS="5.0" tot="5">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/serverSideSelectCollectionLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767133492" lST="1308741341345" ct="7">
+</CS>
+<TS id="13" sT="1306767133492" lST="1308741341375" ct="7" max="83" min="8" sOS="10842.0" tot="224">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/tpvUserSettings.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767149108" lST="1308047927120" ct="5">
+</CS>
+<TS id="13" sT="1306767149108" lST="1308047927151" ct="5" max="70" min="15" sOS="9511.0" tot="197">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/tpvLogSettings.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767153988" lST="1308047929168" ct="4">
+</CS>
+<TS id="13" sT="1306767153988" lST="1308047929187" ct="4" max="22" min="12" sOS="1350.0" tot="72">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/tiles/graphTile.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767166157" lST="1308823811289" ct="10">
+</CS>
+<TS id="13" sT="1306767166157" lST="1308823811289" ct="10" max="1" min="0" sOS="1.0" tot="1">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/xmlStatisticData.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767252495" lST="1308742364125" ct="570">
+</CS>
+<TS id="13" sT="1306767252495" lST="1308742364128" ct="570" max="271" min="0" sOS="148617.0" tot="1805">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/guidedactivity/csframe.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767265217" lST="1308742617163" ct="2">
+</CS>
+<TS id="13" sT="1306767265217" lST="1308742617163" ct="2" max="1" min="0" sOS="1.0" tot="1">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/guidedactivity/cheatSheetView.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767265265" lST="1308742617199" ct="2">
+</CS>
+<TS id="13" sT="1306767265265" lST="1308742617199" ct="2" max="2" min="0" sOS="4.0" tot="2">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/guidedactivity/cheatSheetNav.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306767265267" lST="1308742617196" ct="2">
+</CS>
+<TS id="13" sT="1306767265267" lST="1308742617200" ct="2" max="13" min="4" sOS="185.0" tot="17">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/dynamicSelectionLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306768702245" lST="1307630903460" ct="22">
+</CS>
+<TS id="13" sT="1306768702245" lST="1307630903460" ct="22" max="2" min="0" sOS="12.0" tot="10">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/isclite/tiles/changesFound.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306950101474" lST="1308823748565" ct="10">
+</CS>
+<TS id="13" sT="1306950101474" lST="1308823748565" ct="10" max="14" min="0" sOS="270.0" tot="32">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="SecureCleanup" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307015083689" lST="1308061750926" ct="13">
+</CS>
+<TS id="13" sT="1307015083689" lST="1308061750929" ct="13" max="15" min="1" sOS="372.0" tot="50">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/logonError.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307015086918" lST="1307015086924" ct="1">
+</CS>
+<TS id="13" sT="1307015086918" lST="1307015086926" ct="1" max="2" min="2" sOS="4.0" tot="2">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.security/securityConfigGenPropLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307459770533" lST="1307705305133" ct="10">
+</CS>
+<TS id="13" sT="1307459770533" lST="1307705305149" ct="10" max="202" min="16" sOS="48900.0" tot="450">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.security/adminSecurityLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307459770578" lST="1307705305134" ct="10">
+</CS>
+<TS id="13" sT="1307459770578" lST="1307705305135" ct="10" max="5" min="1" sOS="73.0" tot="25">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.security/appSecurityLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307459770594" lST="1307705305136" ct="10">
+</CS>
+<TS id="13" sT="1307459770594" lST="1307705305136" ct="10" max="3" min="0" sOS="18.0" tot="10">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.security/infrastructureLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307459770607" lST="1307705305137" ct="10">
+</CS>
+<TS id="13" sT="1307459770607" lST="1307705305138" ct="10" max="4" min="1" sOS="55.0" tot="21">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.security/activeRegistryLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307459770623" lST="1307705305138" ct="10">
+</CS>
+<TS id="13" sT="1307459770623" lST="1307705305139" ct="10" max="4" min="0" sOS="30.0" tot="14">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.security/authenticationLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307459770646" lST="1307705305139" ct="10">
+</CS>
+<TS id="13" sT="1307459770647" lST="1307705305148" ct="10" max="61" min="7" sOS="4426.0" tot="140">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/linkLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307459770700" lST="1307705305145" ct="21">
+</CS>
+<TS id="13" sT="1307459770700" lST="1307705305145" ct="21" max="2" min="0" sOS="8.0" tot="6">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/relatedItemsLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307459829291" lST="1307470748741" ct="3">
+</CS>
+<TS id="13" sT="1307459829291" lST="1307470748857" ct="3" max="116" min="101" sOS="35538.0" tot="326">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.security/communicationsConfigGenPropLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307459865980" lST="1307459865983" ct="1">
+</CS>
+<TS id="13" sT="1307459865980" lST="1307459865988" ct="1" max="5" min="5" sOS="25.0" tot="5">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.core.abstracted/task.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307630857091" lST="1307630867112" ct="4">
+</CS>
+<TS id="13" sT="1307630857091" lST="1307630867135" ct="4" max="131" min="23" sOS="31327.0" tot="309">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.core.abstracted/taskTree.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307630857110" lST="1307630867117" ct="4">
+</CS>
+<TS id="13" sT="1307630857110" lST="1307630867118" ct="4" max="11" min="1" sOS="139.0" tot="17">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.core.abstracted/taskStep.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307630857120" lST="1307630867118" ct="14">
+</CS>
+<TS id="13" sT="1307630857120" lST="1307630867118" ct="14" max="1" min="0" sOS="2.0" tot="2">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.security/EnableSecurityTaskStep1.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307630857145" lST="1307630857148" ct="1">
+</CS>
+<TS id="13" sT="1307630857145" lST="1307630857195" ct="1" max="47" min="47" sOS="2209.0" tot="47">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.security/SelectRegistryTaskStep1.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307630860925" lST="1307630860927" ct="1">
+</CS>
+<TS id="13" sT="1307630860925" lST="1307630860959" ct="1" max="32" min="32" sOS="1024.0" tot="32">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.security/ConfigureFederatedRepositoriesTaskStep1.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307630863342" lST="1307630863346" ct="1">
+</CS>
+<TS id="13" sT="1307630863342" lST="1307630863420" ct="1" max="74" min="74" sOS="5476.0" tot="74">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/passwordLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307630863415" lST="1307630863420" ct="2">
+</CS>
+<TS id="13" sT="1307630863415" lST="1307630863420" ct="2" max="1" min="0" sOS="1.0" tot="1">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.security/SelectRegistryTaskStep2.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307630867125" lST="1307630867128" ct="1">
+</CS>
+<TS id="13" sT="1307630867125" lST="1307630867128" ct="1" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/secure/layouts/headingLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307630903430" lST="1307630903432" ct="1">
+</CS>
+<TS id="13" sT="1307630903430" lST="1307630903432" ct="1" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.security/adminAuthentication.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307630903456" lST="1307630903458" ct="1">
+</CS>
+<TS id="13" sT="1307630903456" lST="1307630903462" ct="1" max="4" min="4" sOS="16.0" tot="4">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.web/collectionTableLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307631135626" lST="1307631135628" ct="1">
+</CS>
+<TS id="13" sT="1307631135626" lST="1307631135891" ct="1" max="263" min="263" sOS="69169.0" tot="263">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.appmanagement/collectionTableLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307705393756" lST="1307705546882" ct="5">
+</CS>
+<TS id="13" sT="1307705393756" lST="1307705547296" ct="5" max="437" min="207" sOS="527499.0" tot="1551">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="AppManagementStatusServlet" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307705394116" lST="1307705547366" ct="25">
+</CS>
+<TS id="13" sT="1307705394116" lST="1307705547367" ct="25" max="13" min="0" sOS="181.0" tot="25">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.appmanagement/configGenAddPropLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307705416932" lST="1307705549840" ct="3">
+</CS>
+<TS id="13" sT="1307705416932" lST="1307705550172" ct="3" max="897" min="332" sOS="1050257.0" tot="1597">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.appmanagement/addPropCategorizedLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307705417043" lST="1307705550174" ct="6">
+</CS>
+<TS id="13" sT="1307705417043" lST="1307705550788" ct="6" max="787" min="233" sOS="1268183.0" tot="2441">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.blamanagement/BLAcollectionTableLayout.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307705447527" lST="1307705452760" ct="2">
+</CS>
+<TS id="13" sT="1307705447527" lST="1307705452952" ct="2" max="233" min="192" sOS="91153.0" tot="425">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="BLAManagementStatusServlet" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307705447842" lST="1307705453025" ct="10">
+</CS>
+<TS id="13" sT="1307705447842" lST="1307705453040" ct="10" max="35" min="13" sOS="4469.0" tot="197">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="/com.ibm.ws.console.tpv/logViewer.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1307989306696" lST="1307989306698" ct="1">
+</CS>
+<TS id="13" sT="1307989306696" lST="1307989306731" ct="1" max="33" min="33" sOS="1089.0" tot="33">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+</Stats>
+</Stats>
+<Stats name="isclite#wasportlet.war" statType="com.ibm.ws.wswebcontainer.stats.webAppModuleStats" il="-2" type="COLLECTION">
+<Stats name="portletAppModule" statType="com.ibm.ws.portletcontainer.pmi.xml.portletAppModule" il="-2" type="MODULE">
+<Stats name="Details" statType="com.ibm.ws.portletcontainer.pmi.xml.portletAppModule" il="-2" type="COLLECTION">
+</Stats>
+</Stats>
+<Stats name="portletModule" statType="com.ibm.ws.portletcontainer.pmi.xml.portletModule" il="-2" type="MODULE">
+<Stats name="WASAboutPortlet" statType="com.ibm.ws.portletcontainer.pmi.xml.portletModule" il="-2" type="COLLECTION">
+</Stats>
+</Stats>
+<Stats name="webAppModule.servlets" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="MODULE">
+<CS id="11" sT="1306766393509" lST="1308823750197" ct="27">
+</CS>
+<TS id="13" sT="1306766393509" lST="1308823750199" ct="27" max="13" min="1" sOS="390.0" tot="82">
+</TS>
+<Stats name="/moduleVersion/versioninfo.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766836267" lST="1308823750197" ct="27">
+</CS>
+<TS id="13" sT="1306766836267" lST="1308823750199" ct="27" max="13" min="1" sOS="390.0" tot="82">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+</Stats>
+</Stats>
+<Stats name="ivtApp#ivt_app.war" statType="com.ibm.ws.wswebcontainer.stats.webAppModuleStats" il="-2" type="COLLECTION">
+<Stats name="webAppModule.servlets" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="MODULE">
+<CS id="11" sT="1306766391640" lST="1306766401960" ct="6">
+</CS>
+<TS id="13" sT="1306766391641" lST="1306766402092" ct="6" max="1785" min="0" sOS="3321979.0" tot="2325">
+</TS>
+<Stats name="/ivtAddition.jsp" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766400703" lST="1306766400725" ct="1">
+</CS>
+<TS id="13" sT="1306766400703" lST="1306766400742" ct="1" max="17" min="17" sOS="289.0" tot="17">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="ivtejb" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766401765" lST="1306766401960" ct="1">
+</CS>
+<TS id="13" sT="1306766401765" lST="1306766402091" ct="1" max="131" min="131" sOS="17161.0" tot="131">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="ivtserver" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766397877" lST="1306766401752" ct="3">
+</CS>
+<TS id="13" sT="1306766397877" lST="1306766402092" ct="3" max="1785" min="52" sOS="3304529.0" tot="2177">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+<Stats name="ivtservlet" statType="com.ibm.ws.wswebcontainer.stats.servletStats" il="-2" type="COLLECTION">
+<CS id="11" sT="1306766397932" lST="1306766397936" ct="1">
+</CS>
+<TS id="13" sT="1306766397932" lST="1306766397939" ct="1" max="0" min="0" sOS="0.0" tot="0">
+</TS>
+<Stats name="webAppModule.servlets.urls" statType="com.ibm.ws.wswebcontainer.stats.urlStats" il="-2" type="MODULE">
+</Stats>
+</Stats>
+</Stats>
+</Stats>
+</Stats>
+</Stats>

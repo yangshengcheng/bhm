@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : bhm_websphere_mbean.xml
+    Created on : 2011/6/14
+    Author     : yangshengcheng@gzcss.net
+    
+    Description:
+        Purpose of the document follows.
+-->
+
+<MetricDefinitions>
+
+<!-- jvm -->
+
+<Metrics>
+	<class>WAS_MEMORYPOOL</class>
+    <MetricName>Tomcat_CodeCache_Usage</MetricName>
+    <instance>CodeCache</instance>
+    <ObjectName>java.lang:type=MemoryPool,name=Code Cache</ObjectName>
+    <Attribute>Usage</Attribute>
+	<type>CompositeDataSupport</type>
+</Metrics>
+
+</MetricDefinitions>
