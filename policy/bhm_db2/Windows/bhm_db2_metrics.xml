@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : bhm_db2_metrics.xml
+    Created on : 2011/5/18
+    Author     : yangshengcheng@gzcss.net
+    Description: db2 monitor metrics,db2 version should be V9.1 or above  
+    Purpose of the document follows.
+-->
+
+<MetricDefinitions>
+
+<Metrics>
+	<index>1</index>
+	<class>DB2_GLOBAL</class>
+	<MetricNames>
+		<MetricName>INST_NAME</MetricName>
+		<MetricName>INST_PTR_SIZE</MetricName>
+		<MetricName>SERVICE_LEVEL</MetricName>	
+	</MetricNames>
+	<instances>
+		<instance>INST_NAME</instance>
+	</instances>
+	<sql>SELECT A.INST_NAME AS INST_NAME, B.DB_NAME AS DB_NAME,A.INST_PTR_SIZE,A.SERVICE_LEVEL FROM SYSIBMADM.ENV_INST_INFO A,TABLE(HEALTH_DB_INFO('',-1)) AS B</sql>
+</Metrics>
+
+<Metrics>
+	<index>2</index>
+	<class>DB2_GLOBAL</class>
+	<MetricNames>
+		<MetricName>INT_COMMITS</MetricName>	
+		<MetricName>INT_ROLLBACKS</MetricName>	
+		<MetricName>FAILED_SQL_STMTS</MetricName>	
+		<MetricName>LOCK_WAIT_TIME</MetricName>	
+		<MetricName>LOCK_TIMEOUTS</MetricName>
+		<MetricName>DEADLOCKS</MetricName>
+		<MetricName>APPLS_CUR_CONS</MetricName>
+		<MetricName>CONNECTIONS_TOP</MetricName>
+		<MetricName>DIRECT_READS</MetricName>
+		<MetricName>DIRECT_WRITES</MetricName>
+	</MetricNames>
+	<instances>
+		<instance>INST_NAME</instance>
+	</instances>
+	<sql>SELECT INT_COMMITS,INT_ROLLBACKS,FAILED_SQL_STMTS,LOCK_WAIT_TIME,LOCK_TIMEOUTS,DEADLOCKS,APPLS_CUR_CONS,CONNECTIONS_TOP,DIRECT_READS,DIRECT_WRITES FROM SYSIBMADM.SNAPDB</sql>
+</Metrics>
+
+<Metrics>
+	<index>3</index>
+	<class>DB2_GLOBAL</class>
+	<MetricNames>
+		<MetricName>CATALOG_HIT_RATIO_PERCENT</MetricName>	
+	</MetricNames>
+	<instances>
+		<instance>INST_NAME</instance>
+	</instances>
+	<sql>SELECT ROUND(100*(1 - CAT_CACHE_INSERTS/CAT_CACHE_LOOKUPS),2) AS CATALOG_HIT_RATIO_PERCENT FROM SYSIBMADM.SNAPDB WHERE CAT_CACHE_LOOKUPS IS NOT NULL AND CAT_CACHE_LOOKUPS != 0</sql>
+</Metrics>
+
+<Metrics>
+	<index>4</index>
+	<class>DB2_GLOBAL</class>
+	<MetricNames>
+		<MetricName>PKG_HIT_RATIO_PERCENT</MetricName>	
+	</MetricNames>
+	<instances>
+		<instance>INST_NAME</instance>
+	</instances>
+	<sql>SELECT ROUND(100*(1 - PKG_CACHE_INSERTS/PKG_CACHE_LOOKUPS),2) AS PKG_HIT_RATIO_PERCENT FROM SYSIBMADM.SNAPDB WHERE PKG_CACHE_LOOKUPS IS NOT NULL AND PKG_CACHE_LOOKUPS != 0</sql>
+</Metrics>
+
+<Metrics>
+	<index>5</index>
+	<class>DB2_GLOBAL</class>
+	<MetricNames>
+		<MetricName>LOCKLIST_UTIL</MetricName>	
+	</MetricNames>
+	<instances>
+		<instance>INST_NAME</instance>
+	</instances>
+	<sql>SELECT ROUND(100*(1 - A.LOCK_LIST_IN_USE/(B.VALUE * C.VALUE)),2) AS LOCKLIST_UTIL FROM SYSIBMADM.SNAPDB A,SYSIBMADM.DBCFG B,SYSIBMADM.DBCFG C where B.NAME='locklist' and c.NAME='pagesize'</sql>
+</Metrics>
+
+<Metrics>
+	<index>6</index>
+	<class>DB2_BP</class>
+	<MetricNames>
+		<MetricName>TOTAL_HIT_RATIO_PERCENT</MetricName>
+		<MetricName>DATA_HIT_RATIO_PERCENT</MetricName>
+		<MetricName>INDEX_HIT_RATIO_PERCENT</MetricName>
+	</MetricNames>
+	<instances>
+		<instance>INST_NAME</instance>
+		<instance>BP_NAME</instance>
+	</instances>
+	<sql>SELECT SUBSTR(BP_NAME,1,30) AS BP_NAME,TOTAL_HIT_RATIO_PERCENT,DATA_HIT_RATIO_PERCENT,INDEX_HIT_RATIO_PERCENT FROM SYSIBMADM.BP_HITRATIO WHERE TOTAL_HIT_RATIO_PERCENT IS NOT NULL</sql>
+</Metrics>
+
+<Metrics>
+	<index>7</index>
+	<class>DB2_BP</class>
+	<MetricNames>
+		<MetricName>PERCENT_SYNC_READS</MetricName>
+	</MetricNames>
+	<instances>
+		<instance>INST_NAME</instance>
+		<instance>BP_NAME</instance>
+	</instances>
+	<sql>SELECT SUBSTR(BP_NAME,1,30) AS BP_NAME,PERCENT_SYNC_READS FROM SYSIBMADM.BP_READ_IO WHERE PERCENT_SYNC_READS IS NOT NULL</sql>
+</Metrics>
+
+
+
+<Metrics>
+	<index>8</index>
+	<class>DB2_TBSP</class>
+	<MetricNames>
+		<MetricName>TOTAL_PAGES</MetricName>	
+	</MetricNames>
+	<instances>
+		<instance>INST_NAME</instance>
+		<instance>TBSP_NAME</instance>
+	</instances>
+	<sql>SELECT  SUBSTR(TBSP_NAME,1,30) AS TBSP_NAME,TOTAL_PAGES FROM SYSIBMADM.CONTAINER_UTILIZATION WHERE TOTAL_PAGES IS NOT NULL</sql>
+</Metrics>
+
+
+</MetricDefinitions>
