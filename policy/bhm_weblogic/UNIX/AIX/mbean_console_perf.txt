@@ -1,65 +1,65 @@
 #for weblogic 9.2
 
-JDBCDataSourceRuntimeMBean	 CurrCapacityHighCount	WLSSPI_0700
-WebAppComponentRuntimeMBean	 OpenSessionsHighCount	WLSSPI_0701
+JDBCDataSourceRuntimeMBean	 CurrCapacityHighCount	WLSSPI_0700 int
+WebAppComponentRuntimeMBean	 OpenSessionsHighCount	WLSSPI_0701 int
 
-ThreadPoolRuntimeMBean	 QueueLength	WLSSPI_0702
+ThreadPoolRuntimeMBean	 QueueLength	WLSSPI_0702 int
 
-#ConnectorConnectionPoolRuntimeMBean	 CloseCount	WLSSPI_0703
-ServerRuntimeMBean	OpenSocketsCurrentCount	WLSSPI_0703
-WebAppComponentRuntimeMBean	 OpenSessionsCurrentCount	WLSSPI_0704
-EJBPoolRuntimeMBean	 AccessTotalCount	WLSSPI_0705
-EJBPoolRuntimeMBean	 DestroyedTotalCount	WLSSPI_0706
-EJBPoolRuntimeMBean	 IdleBeansCount		WLSSPI_0707
-EJBPoolRuntimeMBean	 BeansInUseCount	WLSSPI_0708
-EJBTransactionRuntime	 TransactionsCommittedTotalCount	WLSSPI_0709	
-EJBTransactionRuntime	 TransactionsRolledBackTotalCount	WLSSPI_0710
-EJBTransactionRuntime	 TransactionsTimeOutTotalCount	WLSSPI_0711
-ThreadPoolRuntimeMBean	 CompletedRequestCount	WLSSPI_0712
-#ThreadPoolRuntimeMBean	 QueueLength	WLSSPI_0713
+ConnectorConnectionPoolRuntimeMBean	 CloseCount	WLSSPI_0703 int
+ServerRuntimeMBean	OpenSocketsCurrentCount	WLSSPI_0703 int
+WebAppComponentRuntimeMBean	 OpenSessionsCurrentCount	WLSSPI_0704 int
+EJBPoolRuntimeMBean	 AccessTotalCount	WLSSPI_0705 int
+EJBPoolRuntimeMBean	 DestroyedTotalCount	WLSSPI_0706 int
+EJBPoolRuntimeMBean	 IdleBeansCount		WLSSPI_0707 int
+EJBPoolRuntimeMBean	 BeansInUseCount	WLSSPI_0708 int
+EJBTransactionRuntime	 TransactionsCommittedTotalCount	WLSSPI_0709 int	
+EJBTransactionRuntime	 TransactionsRolledBackTotalCount	WLSSPI_0710 int
+EJBTransactionRuntime	 TransactionsTimeOutTotalCount	WLSSPI_0711 int
+ThreadPoolRuntimeMBean	 CompletedRequestCount	WLSSPI_0712 int
+ThreadPoolRuntimeMBean	 QueueLength	WLSSPI_0713 int
 
-ThreadPoolRuntimeMBean	 ExecuteThreadIdleCount	WLSSPI_0714
+ThreadPoolRuntimeMBean	 ExecuteThreadIdleCount	WLSSPI_0714 int
 # (1 - (WLSSPI_0714 / WLSSPI_0713)) * 100  WLSSPI_0715
-#JDBCDataSourceRuntimeMBean	 CurrCapacity	WLSSPI_0716
+JDBCDataSourceRuntimeMBean	 CurrCapacity	WLSSPI_0716 int
 
-#JDBCDataSourceRuntimeMBean MaxCapacity	WLSSPI_0717
+JDBCDataSourceRuntimeMBean MaxCapacity	WLSSPI_0717 int
 
-#JDBCConnectionPoolParamsBean	 LoginDelaySeconds	WLSSPI_0718
+JDBCConnectionPoolParamsBean	 LoginDelaySeconds	WLSSPI_0718 int
 
-#JDBCConnectionPoolParamsBean	 FailuresToReconnectCount	WLSSPI_0719
-#JDBCDataSourceRuntimeMBean	 HighestNumUnavailable	WLSSPI_0720
-#QueryCacheRuntimeMBean	 CacheHitCount	WLSSPI_0721
+JDBCConnectionPoolParamsBean	 FailuresToReconnectCount	WLSSPI_0719 int
+JDBCDataSourceRuntimeMBean	 HighestNumUnavailable	WLSSPI_0720 int
+QueryCacheRuntimeMBean	 CacheHitCount	WLSSPI_0721 int
 
-#JDBCDataSourceRuntimeMBean	 ActiveConnectionsCurrentCount	WLSSPI_0722
+JDBCDataSourceRuntimeMBean	 ActiveConnectionsCurrentCount	WLSSPI_0722 int
 
-JDBCDataSourceRuntimeMBean WaitingForConnectionCurrentCount	WLSSPI_0722
+JDBCDataSourceRuntimeMBean WaitingForConnectionCurrentCount	WLSSPI_0722 int
 
 # interval(WLSSPI_0725 + WLSSPI_0726)	WLSSPI_0723
 #	max(interval(WLSSPI_0725 + WLSSPI_0726))	WLSSPI_0724
 
-#ServerChannelRuntimeMBean	BytesSentCount	WLSSPI_0725
-#ServerChannelRuntimeMBean	BytesReceivedCount	WLSSPI_0726
+ServerChannelRuntimeMBean	BytesSentCount	WLSSPI_0725 int
+ServerChannelRuntimeMBean	BytesReceivedCount	WLSSPI_0726 int
 
 # interval(WLSSPI_0729 + WLSSPI_0730)	WLSSPI_0727
 # max(interval(WLSSPI_0729 + WLSSPI_0730))	WLSSPI_0728
 
-#ServerChannelRuntimeMBean	MessagesSentCount	WLSSPI_0729
-#ServerChannelRuntimeMBean	MessagesReceivedCount	WLSSPI_0730
+ServerChannelRuntimeMBean	MessagesSentCount	WLSSPI_0729 int
+ServerChannelRuntimeMBean	MessagesReceivedCount	WLSSPI_0730 int
 
 
 #according to  the console performent monitor
-JVMRuntimeMBean	Uptime	WLSSPI_0750
-JVMRuntimeMBean	HeapFreePercent	WLSSPI_0751
-JVMRuntimeMBean JavaVersion WLSSPI_0752
+JVMRuntimeMBean	Uptime	WLSSPI_0750 string
+JVMRuntimeMBean	HeapFreePercent	WLSSPI_0751 double
+JVMRuntimeMBean JavaVersion WLSSPI_0752 string
 
-JRockitRuntimeMBean	Uptime	WLSSPI_0750
-JRockitRuntimeMBean	HeapFreePercent	WLSSPI_0751
-JRockitRuntimeMBean	JavaVersion	WLSSPI_0752
+JRockitRuntimeMBean	Uptime	WLSSPI_0750 string
+JRockitRuntimeMBean	HeapFreePercent	WLSSPI_0751 double
+JRockitRuntimeMBean	JavaVersion	WLSSPI_0752 string
 
 #audit
-#ServerSecurityRuntimeMBean UserLockoutTotalCount	WLSSPI_0760
-#ServerSecurityRuntimeMBean InvalidLoginAttemptsTotalCount	WLSSPI_0761
-#ServerSecurityRuntimeMBean LoginAttemptsWhileLockedTotalCount	WLSSPI_0762
-#ServerSecurityRuntimeMBean UnlockedUsersTotalCount	WLSSPI_0763
-#ServerSecurityRuntimeMBean InvalidLoginUsersHighCount	WLSSPI_0764
-#ServerSecurityRuntimeMBean LockedUsersCurrentCount	WLSSPI_0765
+#ServerSecurityRuntimeMBean UserLockoutTotalCount	WLSSPI_0760 int
+#ServerSecurityRuntimeMBean InvalidLoginAttemptsTotalCount	WLSSPI_0761 int
+#ServerSecurityRuntimeMBean LoginAttemptsWhileLockedTotalCount	WLSSPI_0762 int
+#ServerSecurityRuntimeMBean UnlockedUsersTotalCount	WLSSPI_0763 int
+#ServerSecurityRuntimeMBean InvalidLoginUsersHighCount	WLSSPI_0764 int
+#ServerSecurityRuntimeMBean LockedUsersCurrentCount	WLSSPI_0765 int
