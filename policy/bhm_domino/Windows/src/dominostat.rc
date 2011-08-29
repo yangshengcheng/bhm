@@ -1,0 +1,11 @@
+#include "Dominostat.h"
+
+STRINGTABLE
+BEGIN
+#include <globerr.h>
+SERVER_ADDIN_NAME, "dominostat  bhm"
+ADDIN_VERSION, "Version 1.0"
+ADDIN_MSG_FMT, "%s"
+END
+
+
